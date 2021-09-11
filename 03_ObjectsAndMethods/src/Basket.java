@@ -4,6 +4,7 @@ public class Basket {
     private String items = "";
     private int totalPrice = 0;
     private int limit;
+    private int totalweight = 0;
 
     public Basket() {
         increaseCount(1);
