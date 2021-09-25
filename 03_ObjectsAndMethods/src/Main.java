@@ -11,5 +11,44 @@ public class Main {
         System.out.println("Общая стоимость покупок = " + olegBasket.getTotalPrice() + " руб.");
         System.out.println("Общий вес покупок = " + olegBasket.getTotalWeight() + " гр.");
 
+
+        Arithmetic vasyua = new Arithmetic(5,6);
+        vasyua.summ();
+        vasyua.mult();
+        vasyua.findMax();
+        vasyua.findMin();
+
+        Printer olegPrint = new Printer();
+        olegPrint.append("About Volgograd", "Novel", 45);
+
+        olegPrint.append("Мой родной дом ... конец.","Рассказ.", 10);
+        olegPrint.print();
+        olegPrint.getPendingPagesCount();
+        Printer yanaPrinter = new Printer();
+        yanaPrinter.append("Отчет можно начать .. конец.", "Отчет о продажах.", 15);
+        yanaPrinter.append("Cправка выдана мне о .....");
+        yanaPrinter.print();
+        yanaPrinter.print();
+
+
+
+
+        System.out.println("Общее количество распечатанных принтеров страниц за все время - " + Printer.totalPages);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
