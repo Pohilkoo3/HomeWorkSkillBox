@@ -20,28 +20,22 @@ public class Main {
 
         Printer olegPrint = new Printer();
         olegPrint.append("About Volgograd", "Novel", 45);
-
         olegPrint.append("Мой родной дом ... конец.","Рассказ.", 10);
+        olegPrint.getPendingPagesCount();
         olegPrint.print();
         olegPrint.getPendingPagesCount();
-        Printer yanaPrinter = new Printer();
-        yanaPrinter.append("Отчет можно начать .. конец.", "Отчет о продажах.", 15);
-        yanaPrinter.append("Cправка выдана мне о .....");
-        yanaPrinter.print();
-        yanaPrinter.print();
+       Printer.getTotalPages();
 
+       Printer yanaPrinter = new Printer();
+       yanaPrinter.append("Text. Text. Text.", "dsafljk;", 36);
+       yanaPrinter.getPendingPagesCount();
+       yanaPrinter.print();
+       Printer.getTotalPages();
 
-
-
-        System.out.println("Общее количество распечатанных принтеров страниц за все время - " + Printer.totalPages);
-
-
-
-
-
-
-
-
+       Printer my = new Printer();
+       my.append("jhkljh",10);
+       my.print();
+        Printer.getTotalPages();
 
 
 

@@ -5,9 +5,6 @@ import java.util.SplittableRandom;
 public class Printer {
 
     static int totalPages = 0;
-    int pages = 0;
-    String name = "";
-    String text = "";
     private String queue = "";
     int pendingPagesCount = 0;
 
@@ -15,24 +12,28 @@ public class Printer {
 
     public  Printer() {
         System.out.println("New objekt print:");
-
     }
 
-    public void append(String text) {
-        append(text, name);
+    public void append(String text) { //в первом методе мы теперь, имеем возможность распечатать только текст
+        append(text,1);
     }
 
-    public void append(String text, String name){
-        append(text, name, 1);
+    public void append(String text, int pages){ //во втором методе мы теперь, имеем возможность распечатать текст и
+        //определить количество страниц, одна страница будет по умолчанию (меньше ведь быть не может).
+        append(text, "",1 );
     }
 
-    public void append(String text, String name, int pages){
+    public void append(String text, String name, int pages){ //здесь можем заполнить текст, имя документа и количество страниц
         queue = queue + "\n" + text + " " + name + " - " + pages + " стр." ;
         pendingPagesCount = pendingPagesCount + pages;
-        totalPages = totalPages + pages;
     }
+
     public void getPendingPagesCount(){
         System.out.println("Распечатка для объекта " + pendingPagesCount + " стр.");
+    }
+
+    public static void getTotalPages(){
+        System.out.println("Тест принтера. Распечатано " + totalPages + " стр.");
     }
 
 
@@ -42,6 +43,8 @@ public class Printer {
         } else {
             System.out.println("В очереди следующие документы: " + queue);
         }
+
+        totalPages = totalPages + pendingPagesCount;
         clear();
     }
 
@@ -50,6 +53,7 @@ public class Printer {
         pendingPagesCount = 0;
 
     }
+
 
 
 
