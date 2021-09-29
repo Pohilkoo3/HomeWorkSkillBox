@@ -24,22 +24,15 @@ public class Elevator {
 
     public void move(int floor) {
 
-        if (floor >= minFloor && floor <= maxFloor) {
-            if (currentFloor < floor) {
-                while (currentFloor < floor) {
-                    moveUp();
-                    System.out.println("Этаж " + currentFloor);
-                }
-            } else if (currentFloor > floor) {
-                while (currentFloor > floor) {
-                    moveDown();
-                    System.out.println("Этаж " + currentFloor);
-                }
-            }
-
-        } else {
+        if (floor < minFloor && floor > maxFloor){
             System.out.println("Вы ввели неверный этаж.");
             return;
+        }  while (currentFloor != floor) {
+                currentFloor = currentFloor < floor ? moveUp() : moveDown();
+
+                System.out.println("Этаж " + currentFloor);
+           }
+
         }
     }
 
