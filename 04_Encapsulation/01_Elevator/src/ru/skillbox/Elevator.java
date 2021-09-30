@@ -5,7 +5,7 @@ public class Elevator {
     private int minFloor;
     private int maxFloor;
 
-    Elevator (int minFloor, int maxFloor){
+    Elevator(int minFloor, int maxFloor) {
         this.minFloor = minFloor;
         this.maxFloor = maxFloor;
     }
@@ -14,26 +14,32 @@ public class Elevator {
         return currentFloor;
     }
 
-    public void moveDown(){
-        currentFloor = currentFloor > minFloor ? currentFloor - 1 : currentFloor;
-    }
-    public void moveUp(){
-        currentFloor = currentFloor < maxFloor ? currentFloor + 1 : currentFloor;
+    public int moveDown() {
+        currentFloor = getCurrentFloor() > minFloor ? currentFloor - 1 : currentFloor;
+        return currentFloor;
+
     }
 
+    public int moveUp() {
+        currentFloor = getCurrentFloor() < maxFloor ? currentFloor + 1 : currentFloor;
+        return currentFloor;
+
+    }
 
     public void move(int floor) {
-
-        if (floor < minFloor && floor > maxFloor){
-            System.out.println("Вы ввели неверный этаж.");
+        if (floor < minFloor || floor > maxFloor){
+            System.out.println("Этаж введен неверно. Введите этаж от -3 до 26");
             return;
-        }  while (currentFloor != floor) {
-                currentFloor = currentFloor < floor ? moveUp() : moveDown();
+        }
+        while (currentFloor != floor) {
+            currentFloor = currentFloor < floor ? moveUp() : moveDown();
+            System.out.println("Этаж " + currentFloor);
+        }
 
-                System.out.println("Этаж " + currentFloor);
-           }
 
         }
     }
 
-}
+
+
+
