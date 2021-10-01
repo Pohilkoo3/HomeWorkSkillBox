@@ -7,7 +7,7 @@ public class Country {
     private int population; //человек
     private double square; //площадь, кв. км.
     private String capital;
-    private boolean sea; //если тру, то есть выход в море, если false, то нет.
+    private String areaSea; //Да или нет.
 
     public Country(String name) {
         this.name = name;
@@ -45,12 +45,17 @@ public class Country {
         this.capital = capital;
     }
 
-    public boolean isSea() {
-        return sea;
+    public String isSea() {
+        return areaSea;
     }
 
-    public void setSea(boolean sea) {
-        this.sea = sea;
+    public void setSea(String sea) {
+        this.areaSea = sea;
+    }
+
+    public String toString(){
+        return "Страна: " + name + " .\n" + "Население: " + population + " человек.\nПлощадь: " + square + " кв. км. \n" +
+                "Столица: " + capital + ".\n" + "Выход в море: " + areaSea;
     }
 
 
