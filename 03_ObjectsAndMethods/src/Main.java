@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Basket basket = new Basket();
+        /*Basket basket = new Basket();
         basket.add("Milk", 40);
         basket.print("Milk");
         Basket olegBasket = new Basket(600);
@@ -16,33 +16,19 @@ public class Main {
         vasyua.summ();
         vasyua.mult();
         vasyua.findMax();
-        vasyua.findMin();
+        vasyua.findMin();*/
 
-        Printer olegPrint = new Printer();
-        olegPrint.append("About Volgograd", "Novel", 45);
-        olegPrint.append("Мой родной дом ... конец.","Рассказ.", 10);
-        olegPrint.getPendingPagesCount();
-        olegPrint.print();
-        olegPrint.getPendingPagesCount();
-       Printer.getTotalPages();
-
-       Printer yanaPrinter = new Printer();
-       yanaPrinter.append("Text. Text. Text.", "dsafljk;", 36);
-       yanaPrinter.getPendingPagesCount();
-       yanaPrinter.print();
-       Printer.getTotalPages();
-
-       Printer my = new Printer();
-       my.append("jhkljh",10);
-       my.print();
-        Printer.getTotalPages();
-
-
-
-
-
-
-
+        Printer printer1 = new Printer();
+        printer1.append("Обращение");
+        printer1.append("jk",10);
+        printer1.append("kjhkkjgkj",15,"Заява");
+        printer1.append("New");
+        printer1.print();
+        printer1.print();
+        printer1.append("заява для проверки");
+        printer1.print();
+        printer1.print();
+        printer1.getTotalPages();
 
     }
 }
