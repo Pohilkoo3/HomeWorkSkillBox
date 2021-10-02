@@ -1,24 +1,28 @@
 package ru.skillbox;
 
 public class Table {
-    private static String name = "Стол";
+
+
+    private String name;
     private String colorTable;
     private String materialTable;
+    private double weightTable;
+    private double heightTable;
 
-    public Table(String colorTable, String materialTable) {
+    public Table(String name,String colorTable, String materialTable) {
+        this.name = name;
         this.materialTable = materialTable;
         this.colorTable = colorTable;
     }
 
-    private double weightTable;
-    private double heightTable;
 
-    public static String getName() {
+
+    public String getName() {
         return name;
     }
 
-    public static void setName(String name) {
-        Table.name = name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getMaterialTable() {
@@ -52,4 +56,10 @@ public class Table {
     public void setHeightTable(double heightTable) {
         this.heightTable = heightTable;
     }
+    public String toString(){
+        System.out.println("\n" + "Новый стол.");
+        return name + "\n" + "Цвет: " + getColorTable() + "\n" + "Материал:" + getMaterialTable() + "\n" +"Высота: " +
+                getHeightTable() + "\n" + "Вес: " + getWeightTable();
+    }
+
 }
