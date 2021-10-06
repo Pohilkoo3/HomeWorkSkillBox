@@ -2,56 +2,56 @@ package ru.skillbox;
 
 public class Cargo {
     private final String regNumber; // регистрационный номер (может содержать буквы)
-    private Dimensions dimensions;   // габариты
-    private double massa; // масса
-    private String adress; // адрес доставки
+    private final Dimensions dimensions;   // габариты
+    private final double mass; // масса
+    private final String address; // адрес доставки
     private final boolean twist; // свойство — можно ли переворачивать
-    private final boolean fragil ; // является ли груз хрупким.
+    private final boolean fragile; // является ли груз хрупким.
 
-    public Cargo(String regNumber, Dimensions dimensions, double massa, String adress, boolean twist, boolean fragil) {
+    public Cargo(String regNumber, Dimensions dimensions, double mass, String address, boolean twist, boolean fragile) {
         this.regNumber = regNumber;
         this.dimensions = dimensions;
-        this.massa = massa;
-        this.adress = adress;
+        this.mass = mass;
+        this.address = address;
         this.twist = twist;
-        this.fragil = fragil;
+        this.fragile = fragile;
     }
 
 
     public Cargo setRegNumber(String regNumber) {
-        return new Cargo(regNumber, dimensions, massa, adress, twist, fragil);
+        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
     }
     public Cargo setTwist(boolean twist) {
-        return new Cargo(regNumber, dimensions, massa, adress, twist, fragil);
+        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
     }
 
-    public Cargo setFragil(boolean fragil) {
-        return new Cargo(regNumber, dimensions, massa, adress, twist, fragil);
+    public Cargo setFragile(boolean fragile) {
+        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
     }
-    public void setDimensions(Dimensions dimensions) {
-        this.dimensions = dimensions;
+    public Cargo setDimensions(Dimensions dimensions) {
+        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
     }
 
-    public void setMassa(double massa) {
-        this.massa = massa;
+    public Cargo setMass(double mass) {
+        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
     }
     public String getRegNumber() {
         return regNumber;
     }
 
-    public double getMassa() {
-        return massa;
+    public double getMass() {
+        return mass;
     }
 
     public Dimensions getDimensions() {
         return dimensions;
     }
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public Cargo setAddress(String address) {
+        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
     }
 
     public boolean isTwist() {
@@ -60,14 +60,14 @@ public class Cargo {
 
 
 
-    public boolean isFragil() {
-        return fragil;
+    public boolean isFragile() {
+        return fragile;
     }
 
 
     public String toString(){
-        return "\n №: " + getRegNumber() + " Масса = " + getMassa() + " Адресс: " + getAdress() + " Только вертикально:" +
-                isTwist() + " Хрупко: " + isFragil() + "\n Размеры: " + dimensions;
+        return "\n №: " + getRegNumber() + " Масса = " + getMass() + " Адресс: " + getAddress() + " Только вертикально:" +
+                isTwist() + " Хрупко: " + isFragile() + "\n Размеры: " + dimensions;
 
 
     }

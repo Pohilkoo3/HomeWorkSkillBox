@@ -1,23 +1,37 @@
 package ru.skillbox;
 
 public class Dimensions {
-    private final double height; //см.
-    private final  double lenght; //см.
-    private final  double width; // см.
+    private double height; //см.
+    private double length; //см.
+    private double width; // см.
+    private double volume;
 
-    public Dimensions(double height, double lenght, double width) {
+    public Dimensions(double height, double length, double width) {
         this.height = height;
-        this.lenght = lenght;
+        this.length = length;
         this.width = width;
     }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
 
     public double getHeight() {
         return height;
     }
 
 
-    public double getLenght() {
-        return lenght;
+    public double getLength() {
+        return length;
     }
 
 
@@ -27,11 +41,11 @@ public class Dimensions {
 
 
     public double getVolume(){
-        double volume = height * width * lenght; //см.
+        volume = height * width * length; //см.
         return volume;
     }
 
     public String toString(){
-        return "Длина: " + getLenght() + " Высота: " + getHeight() + " Ширина: " + getWidth() + " Объем: " + getVolume();
+        return "Длина: " + getLength() + " Высота: " + getHeight() + " Ширина: " + getWidth() + " Объем: " + getVolume();
     }
 }
