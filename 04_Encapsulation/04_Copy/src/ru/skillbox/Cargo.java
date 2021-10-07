@@ -6,34 +6,34 @@ public class Cargo {
     private final double mass; // масса
     private final String address; // адрес доставки
     private final boolean twist; // свойство — можно ли переворачивать
-    private final boolean fragile; // является ли груз хрупким.
+    private final boolean isFragile; // является ли груз хрупким.
 
-    public Cargo(String regNumber, Dimensions dimensions, double mass, String address, boolean twist, boolean fragile) {
+    public Cargo(String regNumber, Dimensions dimensions, double mass, String address, boolean twist, boolean isFragile) {
         this.regNumber = regNumber;
         this.dimensions = dimensions;
         this.mass = mass;
         this.address = address;
         this.twist = twist;
-        this.fragile = fragile;
+        this.isFragile = isFragile;
     }
 
 
     public Cargo setRegNumber(String regNumber) {
-        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
+        return new Cargo(regNumber, dimensions, mass, address, twist, isFragile);
     }
     public Cargo setTwist(boolean twist) {
-        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
+        return new Cargo(regNumber, dimensions, mass, address, twist, isFragile);
     }
 
     public Cargo setFragile(boolean fragile) {
         return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
     }
     public Cargo setDimensions(Dimensions dimensions) {
-        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
+        return new Cargo(regNumber, dimensions, mass, address, twist, isFragile);
     }
 
     public Cargo setMass(double mass) {
-        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
+        return new Cargo(regNumber, dimensions, mass, address, twist, isFragile);
     }
     public String getRegNumber() {
         return regNumber;
@@ -51,7 +51,7 @@ public class Cargo {
     }
 
     public Cargo setAddress(String address) {
-        return new Cargo(regNumber, dimensions, mass, address, twist, fragile);
+        return new Cargo(regNumber, dimensions, mass, address, twist, isFragile);
     }
 
     public boolean isTwist() {
@@ -61,7 +61,7 @@ public class Cargo {
 
 
     public boolean isFragile() {
-        return fragile;
+        return isFragile;
     }
 
 

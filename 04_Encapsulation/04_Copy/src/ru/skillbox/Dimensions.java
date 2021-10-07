@@ -1,9 +1,9 @@
 package ru.skillbox;
 
 public class Dimensions {
-    private double height; //см.
-    private double length; //см.
-    private double width; // см.
+    private final double height; //см.
+    private final double length; //см.
+    private final double width; // см.
     private double volume;
 
     public Dimensions(double height, double length, double width) {
@@ -12,16 +12,16 @@ public class Dimensions {
         this.width = width;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
+    public Dimensions setHeight(double height) {
+        return new Dimensions(height, length, width);
     }
 
-    public void setLength(double length) {
-        this.length = length;
+    public Dimensions setLength(double length) {
+        return new Dimensions(height, length,width);
     }
 
-    public void setWidth(double width) {
-        this.width = width;
+    public Dimensions setWidth(double width) {
+        return new Dimensions(height, length,width);
     }
 
 
