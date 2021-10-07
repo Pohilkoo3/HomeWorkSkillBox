@@ -19,8 +19,16 @@ public class Main {
         System.out.println("Цена покупок Всех КОРЗИН класса = " + Basket.getBasketTotalPrice() + " руб.");
         System.out.println("Общее количество товаров Всех КОРЗИН класса = " + Basket.getBasketTotalAmount() + " шт.");
 
-        System.out.printf("\n Средняя цена товаров во всех корзинах составляет %.1f",Basket.getBasketAverageValue());
-        System.out.println("\n Средняя стоимость покупок одной корзины = " + Basket.getBasketAverageTotalPrice() + " руб.");
+        Basket basket2 = new Basket(45000);
+        basket2.add("кофта",4800,5);
+        basket2.add("пуговицы", 100,2);
+        basket2.print("\n Корзина 3:");
+        System.out.println("Общая цена покупок баскет1 = " + basket2.getTotalPrice() + " руб.");
+        System.out.println("Цена покупок Всех КОРЗИН класса = " + Basket.getBasketTotalPrice() + " руб.");
+        System.out.println("Общее количество товаров Всех КОРЗИН класса = " + Basket.getBasketTotalAmount() + " шт.");
+
+        System.out.printf("\n Средняя цена товаров во всех корзинах составляет %.2f руб./шт.",Basket.getBasketAverageValue() );
+        System.out.printf("\n Средняя стоимость покупок одной корзины = %.2f руб.", Basket.getBasketAverageTotalPrice());
 
 
 
