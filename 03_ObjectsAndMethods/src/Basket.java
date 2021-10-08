@@ -7,8 +7,8 @@ public class Basket {
     private double totalWeight = 0;
     private static int basketTotalPrice;
     private static int basketTotalAmount;
-    private static double basketAverageValue;
-    private static double basketAverageTotalPrice;
+    private int totalamount = 0;
+
 
     public Basket() {
         increaseCount(1);
@@ -36,9 +36,22 @@ public class Basket {
     public static void increaseCount(int count) {
         Basket.count = Basket.count + count;
     }
+
     public static void basketTotalPrice(String name, int price, int count){
         basketTotalPrice = basketTotalPrice + count * price;
     }
+
+    public void clear() {
+        items = "";
+        totalWeight = 0;
+        basketTotalPrice = basketTotalPrice - totalPrice;
+        totalPrice = 0;
+        basketTotalAmount = basketTotalAmount - totalamount;
+        count--;
+
+    }
+
+
     public static void basketTotalAmount (String name, int count){
             basketTotalAmount = basketTotalAmount + count;
     }
@@ -64,11 +77,11 @@ public class Basket {
             System.out.println("Error occured :(");
             return;
         }
-
         items = items + "\n" + name + " - " +
-                count + " шт. - " + price + " - " + weight + " - гр.";
+                count + " шт. - " + price + " руб./шт."  + " - " + weight + " - гр.";
         totalPrice = totalPrice + count * price;
         totalWeight = totalWeight + weight * count;
+        totalamount = totalamount + count;
         basketTotalPrice(name, price, count);
         basketTotalAmount (name,count);
     }
@@ -79,26 +92,19 @@ public class Basket {
     public static int getBasketTotalAmount(){
         return basketTotalAmount;
     }
+
     public static double getBasketAverageValue(){
-        return basketAverageValue = (basketTotalPrice*1.0)/basketTotalAmount;
+        return (double) basketTotalPrice/basketTotalAmount;
     }
     public static double getBasketAverageTotalPrice(){
-        return basketAverageTotalPrice = (basketTotalPrice*1.0)/count;
+        return (double) basketTotalPrice/count;
     }
-
-
 
     public double getTotalWeight() {
         return totalWeight;
     }
 
 
-
-    public void clear() {
-        items = "";
-        totalPrice = 0;
-        totalWeight = 0;
-    }
 
     public int getTotalPrice() {
         return totalPrice;
