@@ -7,7 +7,7 @@ public class Basket {
     private double totalWeight = 0;
     private static int basketTotalPrice;
     private static int basketTotalAmount;
-    private int totalamount = 0;
+    private int totalAmount = 0;
 
 
     public Basket() {
@@ -27,17 +27,20 @@ public class Basket {
         this();
         this.items = this.items + items;
         this.totalPrice = totalPrice;
+        basketTotalPrice += totalPrice;
+        basketTotalAmount += 1;
+        this.totalAmount = totalAmount + 1;
     }
 
     public static int getCount() {
         return count;
     }
 
-    public static void increaseCount(int count) {
+    private static void increaseCount(int count) {
         Basket.count = Basket.count + count;
     }
 
-    public static void basketTotalPrice(String name, int price, int count){
+    private static void basketTotalPrice(String name, int price, int count){
         basketTotalPrice = basketTotalPrice + count * price;
     }
 
@@ -46,13 +49,12 @@ public class Basket {
         totalWeight = 0;
         basketTotalPrice = basketTotalPrice - totalPrice;
         totalPrice = 0;
-        basketTotalAmount = basketTotalAmount - totalamount;
+        basketTotalAmount = basketTotalAmount - totalAmount;
         count--;
-
     }
 
 
-    public static void basketTotalAmount (String name, int count){
+    private static void basketTotalAmount (String name, int count){
             basketTotalAmount = basketTotalAmount + count;
     }
     public void add(String name, int price) {
@@ -81,7 +83,7 @@ public class Basket {
                 count + " шт. - " + price + " руб./шт."  + " - " + weight + " - гр.";
         totalPrice = totalPrice + count * price;
         totalWeight = totalWeight + weight * count;
-        totalamount = totalamount + count;
+        totalAmount = totalAmount + count;
         basketTotalPrice(name, price, count);
         basketTotalAmount (name,count);
     }
@@ -104,13 +106,11 @@ public class Basket {
         return totalWeight;
     }
 
-
-
     public int getTotalPrice() {
         return totalPrice;
     }
 
-    public boolean contains(String name) {
+    private boolean contains(String name) {
         return items.contains(name);
     }
 
