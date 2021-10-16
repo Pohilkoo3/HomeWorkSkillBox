@@ -9,13 +9,13 @@ public class ArithmeticCalculator {
         this.b = b;
     }
 
-    public void calculate(Operation operation){
+    public int calculate(Operation operation){
         if (operation == Operation.ADD){
-            System.out.println("a+b=" + (a+b));
+            return a+b;
         } else if (operation == Operation.MULTIPLY){
-            System.out.println("a*b=" +(a*b));
+           return a*b;
         } else {
-            System.out.println("a-b=" + (a-b));
+           return a-b;
         }
     }
 
