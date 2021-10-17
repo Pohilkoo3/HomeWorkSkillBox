@@ -1,11 +1,11 @@
 package ru.skillbox;
 
 public class Computer {
-    public final Processor processor;
-    public final RAM ram;
-    public final HardDisk hardDisk;
-    public final Monitor monitor;
-    public final Keyboard keyboard;
+    public Processor processor;
+    public RAM ram;
+    public HardDisk hardDisk;
+    public Monitor monitor;
+    public Keyboard keyboard;
     public final String vendor; //продавец
     public final String name; //название компьютера
 
@@ -21,24 +21,24 @@ public class Computer {
         this.name = name;
     }
 
-    public Computer setProcessor(Processor processor) {
-        return new Computer(vendor, name, processor, ram, hardDisk, monitor, keyboard);
+    public void setProcessor(Processor processor) {
+        this.processor = processor;
     }
 
-    public Computer setRam(RAM ram) {
-        return new Computer(vendor, name, processor, ram, hardDisk, monitor, keyboard);
+    public void setRam(RAM ram) {
+        this.ram = ram;
     }
 
-    public Computer setHardDisk(HardDisk hardDisk) {
-        return new Computer(vendor, name, processor, ram, hardDisk, monitor, keyboard);
+    public void setHardDisk(HardDisk hardDisk) {
+        this.hardDisk = hardDisk;
     }
 
-    public Computer setMonitor(Monitor monitor) {
-        return new Computer(vendor, name, processor, ram, hardDisk, monitor, keyboard);
+    public void setMonitor(Monitor monitor) {
+        this.monitor = monitor;
     }
 
-    public Computer setKeyboard(Keyboard keyboard) {
-        return new Computer(vendor, name, processor, ram, hardDisk, monitor, keyboard);
+    public void setKeyboard(Keyboard keyboard) {
+        this.keyboard = keyboard;
     }
 
     public Processor getProcessor() {
@@ -76,9 +76,9 @@ public class Computer {
     }
 
     public double getTotalWeight(){
-        double totalWeightComputer = processor.getWeight() + ram.getWeight() + monitor.getWeight() + keyboard.getWeight() +
+        return processor.getWeight() + ram.getWeight() + monitor.getWeight() + keyboard.getWeight() +
                 hardDisk.getWeight();
-        return totalWeightComputer;
+
     }
 
 

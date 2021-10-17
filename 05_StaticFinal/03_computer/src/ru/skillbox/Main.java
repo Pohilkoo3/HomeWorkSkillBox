@@ -10,14 +10,15 @@ public class Main {
         RAM ram1 = new RAM(RAM.VolumeRam.R2000, RAM.TypeRAM.DDR3,564);
         HardDisk hardDiskApple = new HardDisk(56, HardDisk.VolumeHardDisk.GB1000, HardDisk.TypeHardDisk.SSD);
         Monitor monitorSamsung = new Monitor(890, Monitor.TypeScreen.TN, Monitor.SizeScreen.S21);
-        Keyboard keyboardPerf = new Keyboard(125, Keyboard.LightKeyboard.NO, Keyboard.TypeKeyboard.MECHANICAL);
+        Keyboard keyboardPerfeo = new Keyboard(125, Keyboard.LightKeyboard.NO, Keyboard.TypeKeyboard.MECHANICAL);
         Computer computerOleg = new Computer("IBM","Игровой компьютер.",processorApple,ram1,hardDiskApple,monitorSamsung,
-                keyboardPerf);
+                keyboardPerfeo);
         System.out.println(computerOleg);
         System.out.println("Общий вес всех комплектующих: " + computerOleg.getTotalWeight() + " гр.");
-        computerOleg = computerOleg.setProcessor(processorLenovo);
+        computerOleg.setProcessor(processorLenovo);
         System.out.println(computerOleg);
         System.out.println("Общий вес всех комплектующих: " + computerOleg.getTotalWeight() + " гр.");
+
 
 
 
