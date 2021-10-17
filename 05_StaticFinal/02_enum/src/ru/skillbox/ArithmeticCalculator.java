@@ -1,8 +1,8 @@
 package ru.skillbox;
 
 public class ArithmeticCalculator {
-    private static int a;
-    private static int b;
+     private int a;
+     private int b;
 
     public ArithmeticCalculator (int a, int b){
         this.a = a;
