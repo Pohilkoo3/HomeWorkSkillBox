@@ -14,7 +14,6 @@ public class Main {
         /*for (int i = 0; i <= 65535; i++) {//цикл для вывода символов и их номеров
             char y = (char) i;
             System.out.println(i + " - " + y);*/
-
     }
 
 
