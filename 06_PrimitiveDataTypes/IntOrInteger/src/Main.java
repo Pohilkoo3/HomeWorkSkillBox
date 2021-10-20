@@ -5,11 +5,11 @@ public class Main {
         container.addCount(5672);
         System.out.println(container.getCount());
 
-        Main search = new Main();
-        System.out.println(search.getNumberChar('А'));
-        System.out.println(search.getNumberChar('я'));
-        System.out.println(search.getNumberChar('Ё'));
-        System.out.println(search.getNumberChar('ё'));
+
+        System.out.println(getNumberChar('А'));
+        System.out.println(getNumberChar('я'));
+        System.out.println(getNumberChar('Ё'));
+        System.out.println(getNumberChar('ё'));
 
         /*for (int i = 0; i <= 65535; i++) {//цикл для вывода символов и их номеров
             char y = (char) i;
@@ -18,7 +18,7 @@ public class Main {
     }
 
 
-        public int getNumberChar(char symbol) {//сделал метод, который перебирает символы и возвращает номер необходимого
+        public static int getNumberChar(char symbol) {//сделал метод, который перебирает символы и возвращает номер необходимого
             int i = 0;
             for (; i < 65_535; i++) {
                 if ((char) i == symbol) {
