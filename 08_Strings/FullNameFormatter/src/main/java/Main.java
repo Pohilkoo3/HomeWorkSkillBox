@@ -20,7 +20,7 @@ public class Main {
         break;
       }
       String surname = input.substring(0,stopSurname);
-      String middleName = input.substring(startMiddleName + 1, input.length());
+      String middleName = input.substring(startMiddleName + 1);
       String name = (input.substring(stopSurname,startMiddleName)).trim();
       int searchNewSpaces = name.indexOf(' ');
       if (name.isEmpty() || searchNewSpaces > 0){
