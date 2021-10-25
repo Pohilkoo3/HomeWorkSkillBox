@@ -7,12 +7,30 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     while (true) {
       String input = scanner.nextLine();
-      if (input.equals("0")) {
+      for (int i = 0; i < input.length(); i++){
+        if (Character.isDigit(input.charAt(i))) {
+          System.out.println("Введенная строка не является ФИО");
+          return;
+        }
+      }
+      int stopSurname = input.indexOf(" ");
+      int startMiddleName = input.lastIndexOf(' ');
+      if (stopSurname < 0 || startMiddleName < 0){
+        System.out.println("Введенная строка не является ФИО");
         break;
       }
-      //TODO:напишите ваш код тут, результат вывести в консоль.
-      //При невалидном ФИО вывести в консоль: Введенная строка не является ФИО
+      String surname = input.substring(0,stopSurname);
+      String middleName = input.substring(startMiddleName + 1, input.length());
+      String name = (input.substring(stopSurname,startMiddleName)).trim();
+      int searchNewSpaces = name.indexOf(' ');
+      if (name.isEmpty() || searchNewSpaces > 0){
+        System.out.println("Введенная строка не является ФИО");
+        break;
+      }
+      System.out.println("Фамилия: " + surname);
+      System.out.println("Имя: " + name);
+      System.out.println("Отчество: " + middleName);
+      return;
     }
   }
-
 }
