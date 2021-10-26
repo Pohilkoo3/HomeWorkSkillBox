@@ -8,9 +8,14 @@ public class Main {
     while (true) {
       String input = scanner.nextLine();
       for (int i = 0; i < input.length(); i++){
-        if (Character.isDigit(input.charAt(i))) {
-          System.out.println("Введенная строка не является ФИО");
-          return;
+       if (Character.isDigit(input.charAt(i)) || !Character.UnicodeBlock.of(input.charAt(i)).
+                equals(Character.UnicodeBlock.CYRILLIC)) {
+          if(input.charAt(i) != ' '){
+            if (input.charAt(i) != '-'){
+              System.out.println("Введенная строка не является ФИО");
+              return;
+            }
+          }
         }
       }
       int stopSurname = input.indexOf(" ");
@@ -30,7 +35,7 @@ public class Main {
       System.out.println("Фамилия: " + surname);
       System.out.println("Имя: " + name);
       System.out.println("Отчество: " + middleName);
-      return;
+      break;
     }
   }
 }
