@@ -5,8 +5,16 @@ public class Main {
   }
 
   public static String splitTextIntoWords(String text) {
-    //TODO реализуйте метод
-    return "";
+    if (text.isEmpty()){
+      return "";
+    }
+    String regex = "[.,0-9\\-;:]";
+    String textReplace = (text.replaceAll(regex, " "));
+    String words[] =textReplace.split("\\s+");
+    StringBuilder wordString = new StringBuilder();
+    for (int i = 0; i < words.length; i++){
+      wordString.append(words[i]).append("\n");
+    }
+    return (wordString.toString()).trim();
   }
-
 }
