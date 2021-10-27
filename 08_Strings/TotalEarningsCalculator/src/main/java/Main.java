@@ -11,11 +11,22 @@ public class Main {
       int stop = text.indexOf(search, startSearch);
       if (Character.isDigit(text.charAt(stop-1))){
         int start = text.lastIndexOf(' ', stop-1);
-        int  salary = Integer.parseInt((text.substring(start,stop)).trim());
+        int salary = getCountSalary((text.substring(start,stop)).trim());
         totalSalary += salary;
         startSearch = stop + 1;
       }
     } System.out.println(totalSalary);
   }
 
+  public static int getCountSalary(String checkSalary){
+    StringBuilder rightSalary = new StringBuilder();
+    for (int i = checkSalary.length(); i > 0; i--) {
+      if (Character.isDigit(checkSalary.charAt(i-1))) {
+        rightSalary.append(checkSalary.charAt(i-1));
+      } else {
+        return 0; //  return 0;
+      }
+    }
+    return Integer.parseInt(String.valueOf(rightSalary.reverse()));
+  }
 }
