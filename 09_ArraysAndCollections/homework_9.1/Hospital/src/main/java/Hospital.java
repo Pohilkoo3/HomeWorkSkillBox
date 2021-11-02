@@ -24,7 +24,7 @@ public class Hospital {
         for (int i = 0; i < temperatureData.length; i++){
             summaTemperature += temperatureData[i];
             temperatureOutput.append(temperatureData[i]).append(' ');
-            if (temperatureData[i] >= 36.2 && temperatureData[i] < 36.9 + epsilon ){
+            if (temperatureData[i] >= 36.2 && temperatureData[i] <= 36.9 + epsilon ){
                 countHealth++;
             }
         }
