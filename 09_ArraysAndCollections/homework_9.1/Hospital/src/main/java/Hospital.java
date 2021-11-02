@@ -18,12 +18,13 @@ public class Hospital {
         */
 
         float summaTemperature = 0;
+        double epsilon = 0.00001; // допустимая погрешность
         int countHealth = 0;
         StringBuilder temperatureOutput = new StringBuilder();
         for (int i = 0; i < temperatureData.length; i++){
             summaTemperature += temperatureData[i];
             temperatureOutput.append(temperatureData[i]).append(' ');
-            if (temperatureData[i] >= 36.2 && temperatureData[i] <= 36.99){
+            if (temperatureData[i] >= 36.2 && temperatureData[i] < 36.9 + epsilon ){
                 countHealth++;
             }
         }
