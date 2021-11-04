@@ -8,23 +8,24 @@
         // TODO: написать консольное приложение для работы со списком дел todoList
      */
 
+/*LIST — выводит дела с их порядковыми номерами;
+ADD — добавляет дело в конец списка или дело на определённое место, сдвигая остальные дела вперёд, если указать номер; если указан несуществующий индекс - добавить в конец списка.
+EDIT — заменяет дело с указанным номером; если указан несуществующий индекс - ничего не делать.
+DELETE — удаляет; если указан несуществующий индекс - ничего не делать.*/
+import java.util.Scanner;
 
 public class Main {
 
-
     public static void main(String[] args) {
-        TodoList olegList = new TodoList();
-        olegList.add("Пойти за хлебом");
-        olegList.add(0,"Купить молоко");
-        olegList.add("Выпить кофе");
-
-        olegList.add(2, "Поучить Java");
-
-        olegList.edit("Выгулять собаку", 3);
-
-        olegList.delete(1);
-        olegList.list();
-
-
+        Scanner scanner = new Scanner(System.in);
+        TodoList test = new TodoList();
+        while (true){
+            System.out.println("Введите команду. Для завершения работы введите END");
+            String commandCycle = scanner.nextLine();
+            test.getCommand(commandCycle);
+            if (commandCycle.equals("END")){
+                return;
+            }
+        }
     }
 }
