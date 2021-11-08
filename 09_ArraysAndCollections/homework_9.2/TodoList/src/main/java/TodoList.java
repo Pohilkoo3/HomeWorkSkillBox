@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 public class TodoList {
     private final ArrayList<String> todoList = new ArrayList<>();
 
+
     public void add(String todo) {
         todoList.add(todo);
         // TODO: добавьте переданное дело в конец списка
@@ -15,11 +16,11 @@ public class TodoList {
         todoList.add( index, todo);
     }
 
-    public void edit(String todo, int index) {
+    public String edit(String todo, int index) {
         if (index < 0 || index > todoList.size() - 1){          //  проверьте возможность изменения
-            return;
+            return null;
         }
-        todoList.set(index,todo);         // TODO: заменить дело на index переданным todo индекс,
+        return todoList.set(index,todo);         // TODO: заменить дело на index переданным todo индекс,
     }
 
     public void delete(int index) {
@@ -29,9 +30,15 @@ public class TodoList {
             todoList.remove(index);                    // TODO: удалить дело находящееся по переданному индексу,                                               //  проверьте возможность удаления дела
         }
     }
-
+    /*public Map<String, String> getFieldMap() {
+      Map<String, String> deepCopy = new HashMap<String, String>();
+      for(String key : fieldMap.keySet()) {
+        deepCopy.put(key, fieldMap.get(key));
+      }
+      return deepCopy;*/
     public ArrayList<String> getTodos() {
-        return todoList;   // TODO: вернуть список дел
+        ArrayList<String> deepCopy = new ArrayList<>(todoList);
+        return deepCopy;   // TODO: вернуть список дел
     }
 
     public String getCase(int index){

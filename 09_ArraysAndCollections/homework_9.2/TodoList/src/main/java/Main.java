@@ -23,6 +23,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         TodoList test = new TodoList();
+        test.getTodos().add("123");
+        test.getTodos().add("234");
+
 
         while (true){
             System.out.println("Введите команду. Для завершения работы введите END");
@@ -30,6 +33,7 @@ public class Main {
             if (commandCycle.equals("END")){
                 return;
             }
+
             getMethod(commandCycle);
             if (method.equals("EDIT") && indexCommand >=0){
                 System.out.println("----" + "Дело \"" + test.getCase(indexCommand) + "\"" + " заменено на \"" + textCommand + "\"");
@@ -61,12 +65,15 @@ public class Main {
     }
 
     static void getMethod(String commandCycle){
-        String regex = "([A-Z]{3,6})\\s*(\\d*)\\s*(.*)";
+        String regex = "(ADD|DELETE|EDIT|LIST)\\s*(\\d*)\\s*(.*)";
         Pattern pat = Pattern.compile(regex);
         Matcher mat = pat.matcher(commandCycle);
+        if (!Pattern.matches(regex, commandCycle)){
+            return;
+        }
         mat.find();
-        method = mat.group(1);
         textCommand = mat.group(3);
+        method = mat.group(1);
         if (mat.group(2).isEmpty()){
             indexCommand = -1;
         } else {
