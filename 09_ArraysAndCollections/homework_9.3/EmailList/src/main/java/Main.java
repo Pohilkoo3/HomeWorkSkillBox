@@ -1,33 +1,41 @@
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
-    public static final String WRONG_EMAIL_ANSWER = "Неверный формат email";
-    
-    /* TODO:
-        Пример вывода списка Email, после ввода команды LIST в консоль:
-        test@test.com
-        hello@mail.ru
-        - каждый адрес с новой строки
-        - список должен быть отсортирован по алфавиту
-        - email в разных регистрах считается одинаковыми
-           hello@skillbox.ru == HeLLO@SKILLbox.RU
-        - вывод на печать должен быть в нижнем регистре
-           hello@skillbox.ru
-        Пример вывода сообщения об ошибке при неверном формате Email:
-        "Неверный формат email"
-    */
 
+    private static String command = "";
+    private static String nameEmail = "";
     public static void main(String[] args) {
+        EmailList test = new EmailList();
         Scanner scanner = new Scanner(System.in);
-        
+
         while (true) {
             String input = scanner.nextLine();
             if (input.equals("0")) {
                 break;
             }
-            
-            //TODO: write code here
-            
+            getCommand(input);
+            if (command.equals("ADD")) {
+                test.add(nameEmail);
+            } else if (command.equals("LIST")) {
+                for (String print : test.getSortedEmails()) {
+                    System.out.println(print.toLowerCase());
+                }
+            }
+        }
+    }
+ public static void getCommand(String input){
+        String regex = "(ADD|LIST)\\s*(.+@.+\\..+)*";
+        Pattern pat = Pattern.compile(regex);
+        Matcher mat = pat.matcher(input);
+        if (!Pattern.matches(regex, input)){
+            return;
+        } else {
+            mat.find();
+            command = mat.group(1);
+            nameEmail = mat.group(2);
         }
     }
 }
+
