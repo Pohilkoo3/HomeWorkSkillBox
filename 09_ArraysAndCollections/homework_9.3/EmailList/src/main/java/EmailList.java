@@ -6,21 +6,18 @@ import java.util.regex.Pattern;
 
 public class EmailList {
     private final TreeSet<String> emailList = new TreeSet<>();
-    public static final String WRONG_EMAIL_ANSWER = "Неверный формат email";
+    private static final String regex = "(.+@.+\\..+)";
+    private static final Pattern pat = Pattern.compile(regex);
 
-    public void add(String email) {
-        String regex = "(.+@.+\\..+)";
-        Pattern pat = Pattern.compile(regex);
-        Matcher mat = pat.matcher(email);
-        if (!Pattern.matches(regex, email)) {
-            System.out.println(WRONG_EMAIL_ANSWER);
-            return;
-        }
-        mat.find();
-            emailList.add((mat.group(0)).toLowerCase());      // TODO: валидный формат email добавляется
-        }
+    public boolean add(String email) {
+        Matcher matcherEmail = pat.matcher(email);
+        if (matcherEmail.matches()) {
+            emailList.add(email.toLowerCase());
+            return true;// TODO: валидный формат email добавляется
+        }return false;
+    }
 
     public List<String> getSortedEmails() {
-       return new ArrayList<>(emailList);    // TODO: возвращается список электронных адресов в алфавитном порядке
-       }
+        return new ArrayList<>(emailList);    // TODO: возвращается список электронных адресов в алфавитном порядке
+    }
 }
