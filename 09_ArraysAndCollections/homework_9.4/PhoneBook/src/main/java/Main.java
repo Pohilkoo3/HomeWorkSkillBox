@@ -48,14 +48,13 @@ public class Main {
                 } else {
                     System.out.println("Такого имени в телефонной книге нет.\nВведите номер телефона для абонента " + input);
                     String numberInput = scanner.nextLine();
-                    if (!numberInput.equals("null")) {
                         test.addContact(numberInput, input);
                         if (test.addContact(numberInput, input)) {
                             System.out.println(save);
                         } else {
                             System.out.println("Неверный формат ввода номера.");
                         }
-                    }
+
                 }
             }
         }
