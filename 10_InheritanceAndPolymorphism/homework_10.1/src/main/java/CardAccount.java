@@ -7,6 +7,9 @@ public class CardAccount extends BankAccount {
         double amountTaxToTake = amountToTake * PERCENT_TO_GET;
         return super.take(amountToTake + amountTaxToTake);
     }
+
+    @Override
+    public String toString() {
+        return "CardAccount - " + super.toString();
+    }
 }
-// не забывайте, обращаться к методам и конструкторам родителя
-// необходимо используя super, например, super.put(10D);

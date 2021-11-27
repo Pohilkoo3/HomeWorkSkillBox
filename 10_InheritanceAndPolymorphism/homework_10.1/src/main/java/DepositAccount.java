@@ -1,15 +1,27 @@
 import java.time.LocalDate;
+import java.time.Month;
 import java.time.temporal.ChronoUnit;
+import java.util.LinkedList;
 
 public class DepositAccount extends BankAccount {
-    private LocalDate lastIncome = LocalDate.now(); //дата последнего внесения
+
+        public LocalDate lastIncome;
+
+        @Override
+        public boolean put(double amountToPut) {
+            return super.put(amountToPut);
+        }
 
     @Override
     public boolean take(double amountToTake) {
-        LocalDate now = LocalDate.now();
-        int month = (int) (lastIncome.until(now, ChronoUnit.MONTHS));
-        if (month >= 1) {
-            return super.take(amountToTake);
-        } return false;
+            if (lastIncome != null && lastIncome.lengthOfMonth() >= 1){
+                return super.take(amountToTake);
+        }
+        return false;
     }
-}
+
+    @Override
+        public String toString() {
+            return "DepositAccount - " + super.toString();
+        }
+    }
