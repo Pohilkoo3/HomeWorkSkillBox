@@ -5,15 +5,15 @@ import java.util.LinkedList;
 
 public class DepositAccount extends BankAccount {
 
-        public LocalDate lastIncome;
+    private LocalDate lastIncome;
 
         @Override
-        public boolean put(double amountToPut) {
+        protected boolean put(double amountToPut) {
             return super.put(amountToPut);
         }
 
     @Override
-    public boolean take(double amountToTake) {
+    protected boolean take(double amountToTake) {
             if (lastIncome != null && lastIncome.lengthOfMonth() >= 1){
                 return super.take(amountToTake);
         }
