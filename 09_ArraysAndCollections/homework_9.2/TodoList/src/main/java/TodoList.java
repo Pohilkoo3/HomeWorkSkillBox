@@ -30,12 +30,7 @@ public class TodoList {
             todoList.remove(index);                    // TODO: удалить дело находящееся по переданному индексу,                                               //  проверьте возможность удаления дела
         }
     }
-    /*public Map<String, String> getFieldMap() {
-      Map<String, String> deepCopy = new HashMap<String, String>();
-      for(String key : fieldMap.keySet()) {
-        deepCopy.put(key, fieldMap.get(key));
-      }
-      return deepCopy;*/
+
     public ArrayList<String> getTodos() {
         ArrayList<String> deepCopy = new ArrayList<>(todoList);
         return deepCopy;   // TODO: вернуть список дел

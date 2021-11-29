@@ -26,18 +26,16 @@ public class PhoneBook {
         if (matcherNumber.matches() && matcherName.matches()) {
             phoneBook.put(correctNumber(phone), name);
             return true;
-        } else {
-            return false;
         }
+            return false;
     }
     private static String correctNumber(String number){
         Matcher matcher = pattern.matcher(number);
         if (matcher.matches()) {
             String input1 = (number.replaceAll("\\+", "")).trim();
             return "7".concat(input1.substring(1));
-        }else {
-            return "";
         }
+            return "";
     }
 
     public String getContactByPhone(String phone) {// формат одного контакта "Имя - Телефон"
