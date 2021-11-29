@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class DepositAccount extends BankAccount {
 
 LinkedList<LocalDate> putIncomeDate = new LinkedList<>();
-    private LocalDate lastIncome;
+    private  LocalDate lastIncome;
 
         @Override
         protected boolean put(double amountToPut) {
