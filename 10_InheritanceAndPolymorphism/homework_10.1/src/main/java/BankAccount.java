@@ -1,7 +1,7 @@
 public class BankAccount {
   private double total;
 
-  protected boolean send(BankAccount receiver, double amount){
+  public boolean send(BankAccount receiver, double amount){
     if (!take(amount)){
       return false;
     } receiver.put(amount);
@@ -12,7 +12,7 @@ public class BankAccount {
     return total;
   }
 
-  protected boolean put(double amountToPut) {
+  public boolean put(double amountToPut) {
     if (amountToPut <= 0) {
       return false;
     }
@@ -20,7 +20,7 @@ public class BankAccount {
     return true;
   }
 
-  protected boolean take(double amountToTake) {
+  public boolean take(double amountToTake) {
     if (amountToTake > 0 && (total - amountToTake) >= 0) {
      total -= amountToTake;
       return true;

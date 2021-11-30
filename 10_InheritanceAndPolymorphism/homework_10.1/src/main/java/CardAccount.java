@@ -3,7 +3,7 @@ public class CardAccount extends BankAccount {
 
 
     @Override
-    protected boolean take(double amountToTake) {
+    public boolean take(double amountToTake) {
         double amountTaxToTake = amountToTake * PERCENT_TO_GET;
         return super.take(amountToTake + amountTaxToTake);
     }
