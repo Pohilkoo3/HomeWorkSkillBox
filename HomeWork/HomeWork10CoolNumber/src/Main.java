@@ -5,9 +5,8 @@ public class Main {
     public static void main (String[]args){
         List<String> test = CoolNumbers.generateCoolNumbers();
 
-        for (;; ) {
+        for (;;) {
             System.out.println("Введите искомый номер. Для прекращения поиска введите команду END");
-
             String search = new Scanner(System.in).nextLine();
             if (search.equals("END")){
                 return;
