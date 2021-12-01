@@ -1,11 +1,7 @@
-package CaseBankAccount;
+package HomeWork11_1;
 
 public class BankAccount {
-
-  private double total;
-  private String numberAccount;
-
-
+    private double total;
 
     public boolean send(BankAccount receiver, double amount){
         if (!take(amount)){
@@ -19,25 +15,24 @@ public class BankAccount {
     }
 
     public boolean put(double amountToPut) {
-      if (amountToPut <= 0) {
-          return false;
-      }
-      total = total + amountToPut;
-      return true;
+        if (amountToPut <= 0) {
+            return false;
+        }
+        total = total + amountToPut;
+        return true;
     }
 
     public boolean take(double amountToTake) {
-       if ((total - amountToTake) < 0 || amountToTake <= 0){
-           return false;
-       } total -= amountToTake;
-           return true;
-
+        if (amountToTake > 0 && (total - amountToTake) >= 0) {
+            total -= amountToTake;
+            return true;
+        }return false;
     }
 
     @Override
     public String toString() {
         return "На вашем счете: " +
-                 + total +
+                total +
                 " рублей.";
     }
 }

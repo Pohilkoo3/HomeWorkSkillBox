@@ -1,9 +1,5 @@
-import CaseBankAccount.BankAccount;
-import CaseBankAccount.CardAccount;
-import CaseBankAccount.DepositAccount;
-
-import java.util.LinkedList;
-import java.util.List;
+import HomeWork11_1.BankAccount;
+import HomeWork11_1.DepositAccount;
 
 public class Main {
     private final static String MESSAGE = "Сумма на счете не соответствует ожидаемой";
@@ -19,7 +15,7 @@ bankAccount.put(50000);
         System.out.println(depositAccount);
         depositAccount.take(10000);
         System.out.println( depositAccount);
-        System.out.println(depositAccount.dateIncome);
+
         depositAccount.take(5000);
 
 
