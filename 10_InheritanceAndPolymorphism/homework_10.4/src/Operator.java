@@ -8,7 +8,6 @@ public class Operator implements Employee{
     public double getFixSalary() {
         return fixSalary;
     }
-
     @Override
     public double getMonthSalary() {
         return  fixSalary;

@@ -1,10 +1,6 @@
 public class TopManager extends Operator{
     private final Company company;
 
-    @Override
-    public void setFixSalary(double fixSalary) {
-        super.setFixSalary(fixSalary);
-    }
 
     public TopManager(Company company) {
         this.company = company;
