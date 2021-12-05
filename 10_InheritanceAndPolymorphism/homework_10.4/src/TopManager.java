@@ -1,6 +1,7 @@
+import java.math.BigDecimal;
+
 public class TopManager extends Operator{
     private final Company company;
-
 
     public TopManager(Company company) {
         this.company = company;
@@ -8,7 +9,8 @@ public class TopManager extends Operator{
 
     @Override
     public double getMonthSalary() {
-        return company.getIncomeCompany() > 10_000_000 ? getFixSalary() + 1.5 * getFixSalary() : getFixSalary();
+        if (company.getIncomeCompany().compareTo(new BigDecimal(10_000_000)) > 0){
+           return getFixSalary() + 1.5 * getFixSalary();
+        } return getFixSalary();
     }
-
 }

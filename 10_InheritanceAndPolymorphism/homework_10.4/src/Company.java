@@ -1,19 +1,19 @@
+import java.math.BigDecimal;
 
 public class Company {
     private final String name;
-    private final int incomeCompany;
+    private BigDecimal incomeCompany = new BigDecimal(0.0);
 
     public Company(String name) {
         this.name = name;
-        this.incomeCompany = setIncomeCompany();
     }
 
-    public int getIncomeCompany() {
+    public BigDecimal getIncomeCompany() {
         return incomeCompany;
     }
 
-    private int setIncomeCompany() {
-        return (int) (Math.random() * ((15_500_000.0 - 500_000.0) + 1) + 500_000.0);
+    public void setIncomeCompany(BigDecimal incomeCreateManagers) {
+      incomeCompany = incomeCreateManagers;
     }
 
     @Override
