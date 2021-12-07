@@ -1,6 +1,7 @@
 public class Operator implements Employee{
     private double fixSalary;
 
+
     public void setFixSalary(double fixSalary) {
         this.fixSalary = fixSalary;
     }
@@ -12,4 +13,6 @@ public class Operator implements Employee{
     public double getMonthSalary() {
         return  fixSalary;
     }
+
+
 }

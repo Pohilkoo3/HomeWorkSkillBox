@@ -11,6 +11,7 @@ public class TopManager extends Operator{
     public double getMonthSalary() {
         if (company.getIncomeCompany().compareTo(new BigDecimal(10_000_000)) > 0){
            return getFixSalary() + 1.5 * getFixSalary();
-        } return getFixSalary();
+        }
+        return getFixSalary();
     }
 }

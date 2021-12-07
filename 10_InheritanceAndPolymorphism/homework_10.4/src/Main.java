@@ -1,6 +1,10 @@
+import java.math.BigDecimal;
 import java.util.*;
 
+
 public class Main {
+
+
     public static void main(String[] args) {
 
         Company test = new Company("ООО ВИП");
@@ -9,13 +13,13 @@ public class Main {
         topManager.setFixSalary(100_000);
         Operator operator = new Operator();
         operator.setFixSalary(40_000);
-        Manager manager = new Manager(test);
+        Manager manager = new Manager();
         manager.setFixSalary(80_000);
 
         for (int i = 1; i < 181; i++) {
             listEmployeeTest.hire (new EmployeeMember("Operator " + i, operator.getMonthSalary()));
             if ( i < 81) {
-                listEmployeeTest.hire (new EmployeeMember("Manager " + i, manager.getMonthSalary()));
+                listEmployeeTest.hire (new EmployeeMember("Manager " + i, manager.getMonthSalary(), BigDecimal.valueOf(manager.generateIncome())));
             }
             if (i > 81 && i < 92) {
                 listEmployeeTest.hire (new EmployeeMember("TopManager " + i, topManager.getMonthSalary()));
@@ -31,16 +35,17 @@ public class Main {
             if ( i < 41) {
                 listEmployeeTest.fire ("Manager " + i);
             }
-            if (i < 6) {
+            if (i > 84) {
                 listEmployeeTest.fire ("TopManager " + i);
             }
         }
 
-        System.out.println("Total income manager: " + Manager.getTotalIncome());
         System.out.println("\nПосле увольнения.\n");
+        countSalaryTopManager(listEmployeeTest.getListEmployee(), topManager);
         printStaff(listEmployeeTest.getLowestSalaryStaff(15));
         System.out.println("--------------------------");
         printStaff(listEmployeeTest.getTopSalaryStaff(30));
+
     }
 
     static void printStaff(List<EmployeeMember> list) {
@@ -54,5 +59,13 @@ public class Main {
             count++;
         }
         System.out.println("Количество персонала: " + count);
+    }
+
+    static void countSalaryTopManager(List<EmployeeMember> list, TopManager manager){
+        for (EmployeeMember element : list) {
+           if (element.getName().startsWith("TopManager")){
+                element.setSalary(manager.getMonthSalary());
+            }
+        }
     }
 }

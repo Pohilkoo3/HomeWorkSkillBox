@@ -2,7 +2,7 @@ import java.math.BigDecimal;
 
 public class Company {
     private final String name;
-    private BigDecimal incomeCompany = new BigDecimal(0.0);
+    private BigDecimal incomeCompany = new BigDecimal("0.0");
 
     public Company(String name) {
         this.name = name;
@@ -13,7 +13,7 @@ public class Company {
     }
 
     public void setIncomeCompany(BigDecimal incomeCreateManagers) {
-      incomeCompany = incomeCreateManagers;
+        incomeCompany = incomeCompany.add(incomeCreateManagers);
     }
 
     @Override
