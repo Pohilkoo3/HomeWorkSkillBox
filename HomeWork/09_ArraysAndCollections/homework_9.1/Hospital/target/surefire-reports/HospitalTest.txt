@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: HospitalTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.103 s <<< FAILURE! - in HospitalTest
+testGetReport  Time elapsed: 0.047 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Проверьте формат вывода, округление средней температуры и количество здоровых пациентов ==> expected: <Температуры пациентов: 32.1 33.1 32.5 33.5 34.5 36.5 38.5 39.5 33.3 32.7 36.9 36.5 34.3 37.5 32.5 32.5 32.4 34.5 35.4 32.5 34.5 39.4 32.5 36.5 36.4 39.6 37.5 32.5 37.5 39.4
+Средняя температура: 35.23
+Количество здоровых: 5> but was: <Температуры пациентов: 32.1 33.1 32.5 33.5 34.5 36.5 38.5 39.5 33.3 32.7 36.9 36.5 34.3 37.5 32.5 32.5 32.4 34.5 35.4 32.5 34.5 39.4 32.5 36.5 36.4 39.6 37.5 32.5 37.5 39.4 
+Средняя температура: 35.23
+Количество здоровых: 5>
+	at HospitalTest.testGetReport(HospitalTest.java:53)
+
+testCollectDataContainsCorrectEntries  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Температуры выходят за предельные значения, actual - количество температур в требуемых диапазонах ==> expected: <100> but was: <90>
+	at HospitalTest.testCollectDataContainsCorrectEntries(HospitalTest.java:32)
+

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TodoListTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.102 s <<< FAILURE! - in TodoListTest
+deleteNotExistTodo  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at TodoListTest.deleteNotExistTodo(TodoListTest.java:75)
+
