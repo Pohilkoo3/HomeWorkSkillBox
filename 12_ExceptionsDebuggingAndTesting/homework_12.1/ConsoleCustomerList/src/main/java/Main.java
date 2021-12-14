@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -13,10 +14,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         CustomerStorage executor = new CustomerStorage();
 
+
         while (true) {
             String command = scanner.nextLine();
             String[] tokens = command.split("\\s+", 2);
-
+            try {
+                if (tokens.length !=2 && command.equals("add") || command.equals("remove")){
+                    throw new IllegalArgumentException(COMMAND_ERROR);
+                }
             if (tokens[0].equals("add")) {
                 executor.addCustomer(tokens[1]);
             } else if (tokens[0].equals("list")) {
@@ -30,6 +35,9 @@ public class Main {
             } else {
                 System.out.println(COMMAND_ERROR);
             }
+        }catch (Exception ex){
+                System.out.println(ex.getMessage());
+        }
         }
     }
 }
