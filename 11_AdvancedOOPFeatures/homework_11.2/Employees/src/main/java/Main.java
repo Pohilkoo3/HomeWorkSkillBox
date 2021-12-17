@@ -1,3 +1,5 @@
+import net.sf.saxon.ma.json.JsonParser;
+
 import java.util.Calendar;
 import java.util.Comparator;
 import java.util.Date;
@@ -14,9 +16,12 @@ public class Main {
 
     public static Employee findEmployeeWithHighestSalary(List<Employee> staff, int year) {
 
-        int year1 = year - 2000 + 100;
-        return staff.stream().filter(employee -> employee.getWorkStart()
-                        .getYear() == year1)
+
+        return staff.stream().filter(employee -> {
+             Calendar calendar = Calendar.getInstance();
+              calendar.setTime(employee.getWorkStart());
+                 return calendar.get(Calendar.YEAR) == year;
+                })
                 .sorted(Comparator.comparing(Employee::getSalary))
                 .max(Comparator.comparingDouble(Employee::getSalary)).orElse(null);
     }

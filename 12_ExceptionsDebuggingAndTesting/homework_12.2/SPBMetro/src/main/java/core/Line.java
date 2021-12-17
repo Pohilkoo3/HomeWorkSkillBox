@@ -47,4 +47,10 @@ public class Line implements Comparable<Line>
     {
         return compareTo((Line) obj) == 0;
     }
+
+    @Override
+    public String toString() {
+        return number +
+                 name ;
+    }
 }

@@ -24,6 +24,7 @@ public class Main {
         for (; ; ) {
             Station from = takeStation("Введите станцию отправления:");
             Station to = takeStation("Введите станцию назначения:");
+            System.out.println(from.getLine().toString());
 
             List<Station> route = calculator.getShortestRoute(from, to);
             System.out.println("Маршрут:");
@@ -34,7 +35,7 @@ public class Main {
         }
     }
 
-    private static RouteCalculator getRouteCalculator() {
+    public static RouteCalculator getRouteCalculator() {
         createStationIndex();
         return new RouteCalculator(stationIndex);
     }

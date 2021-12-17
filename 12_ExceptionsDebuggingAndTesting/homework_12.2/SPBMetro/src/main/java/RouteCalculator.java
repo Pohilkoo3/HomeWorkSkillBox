@@ -50,6 +50,7 @@ public class RouteCalculator {
         }
         List<Station> route = new ArrayList<>();
         List<Station> stations = from.getLine().getStations();
+
         int direction = 0;
         for (Station station : stations) {
             if (direction == 0) {
@@ -97,7 +98,7 @@ public class RouteCalculator {
                 }
             }
         }
-        return route;
+        return route.isEmpty() ? null : route;
     }
 
     private boolean isConnected(Station station1, Station station2) {
