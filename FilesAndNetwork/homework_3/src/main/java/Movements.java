@@ -97,7 +97,6 @@ public class Movements {
         return operationList.stream().mapToDouble(Movements::getIncome).reduce(Double::sum).orElse(0);
     }
 
-
     public void setExpense(double expense) {
         this.expense = expense;
     }
@@ -105,7 +104,6 @@ public class Movements {
     public void setIncome(double income) {
         this.income = income;
     }
-
 
     public String toString(){
         return name + " => " + " expense → " + expense + ", income => " + income;
