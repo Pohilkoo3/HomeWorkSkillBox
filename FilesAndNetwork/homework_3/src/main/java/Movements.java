@@ -8,24 +8,15 @@ import java.util.regex.Pattern;
 public class Movements {
     private static final String REGEX ="((/|\\\\)+[A-z0-9_>\\\\/\\s]+[\\s]{3,})";
     private static final Pattern PAT = Pattern.compile(REGEX);
-    private String PATH_TO_SOURCE;
-    private String name;
-    private double income;
-    private double expense;
-    private List<Movements> operationList;
+    private final String PATH_TO_SOURCE;
+    private List<Operation> operationList;
 
     public Movements(String pathMovementsCsv) {
         PATH_TO_SOURCE = pathMovementsCsv;
         getList();
     }
 
-    public Movements(String partner, Double income, Double expense){
-        this.name = partner;
-        this.income = income;
-        this.expense = expense;
-    }
-
-    public List<Movements> getList(){
+    public List<Operation> getList(){
         operationList = new ArrayList<>();
         try {
             List<String> lines = Files.readAllLines(Paths.get(PATH_TO_SOURCE));
@@ -61,15 +52,15 @@ public class Movements {
                     ex.printStackTrace();
                 }
                 int count = 0;
-                for (Movements element : operationList) {
-                    if (element.name.equals(partner)) {
+                for (Operation element : operationList) {
+                    if (element.getName().equals(partner)) {
                             element.setExpense(element.getExpense() + expenseWright);
                             element.setIncome(element.getIncome() + income);
                             count ++;
                         }
                     }
                 if (count == 0) {
-                    operationList.add(new Movements(partner,income, expenseWright));
+                    operationList.add(new Operation(partner,income, expenseWright));
                 }
                 }
         }
@@ -78,34 +69,47 @@ public class Movements {
         }return new ArrayList<>(operationList);
     }
 
-    public double getExpense() {
-        return expense;
+    public double getExpenseSum() {
+         return operationList.stream().mapToDouble(Operation::getExpense).reduce(Double::sum).orElse(0);
     }
+    public double getIncomeSum() {
+        return operationList.stream().mapToDouble(Operation::getIncome).reduce(Double::sum).orElse(0);
+    }
+}
 
-    public double getIncome() {
-        return income;
+class Operation{
+    private String name;
+    private double income;
+    private double expense;
+
+    public Operation(String name, double income, double expense) {
+        this.name = name;
+        this.income = income;
+        this.expense = expense;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getExpenseSum() {
-         return operationList.stream().mapToDouble(Movements::getExpense).reduce(Double::sum).orElse(0);
-    }
-    public double getIncomeSum() {
-        return operationList.stream().mapToDouble(Movements::getIncome).reduce(Double::sum).orElse(0);
-    }
-
-    public void setExpense(double expense) {
-        this.expense = expense;
+    public double getIncome() {
+        return income;
     }
 
     public void setIncome(double income) {
         this.income = income;
     }
 
+    public double getExpense() {
+        return expense;
+    }
+
+    public void setExpense(double expense) {
+        this.expense = expense;
+    }
+
     public String toString(){
         return name + " => " + " expense → " + expense + ", income => " + income;
     }
 }
+
