@@ -20,7 +20,7 @@ public class Main {
         Station.createStations(doc);
         Connection.createConnections(doc);
         writeJsonFile(pathToJsonFile, getJsonObject());
-
+        System.out.printf("В московском метрополитене %d переходов.", Connection.staticListConnections.size());
     }
 
     static void writeJsonFile(String pathToJsonFile, JSONObject object){
@@ -62,4 +62,6 @@ public class Main {
         return jsonObjectResult;
     }
 }
+
+
 
