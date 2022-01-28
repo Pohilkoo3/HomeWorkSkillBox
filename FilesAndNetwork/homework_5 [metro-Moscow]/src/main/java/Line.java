@@ -1,12 +1,15 @@
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Line {
-
-    private String name;
-    private String id;
-    private static List<Line> linesList = new ArrayList<>();
-    private List<Station> listStations;
+    private final String name;
+    private final String id;
+    private final static List<Line> linesList = new ArrayList<>();
+    private final List<Station> listStations;
 
 
 
@@ -40,15 +43,20 @@ public class Line {
     public static List<Line> getLinesList() {
         return new ArrayList<>(linesList);
     }
-    public static Line getLinesToPath(String nameOfLine){
-        return linesList.stream().filter(line -> line.getName().equals(nameOfLine)).findFirst().orElse(null);
-    }
 
+
+
+    public static void createLines(Document doc){
+        Elements linesListSource = doc.select("div > span");//TODO создаем все линии код готов
+        for (Element element : linesListSource) {
+            String nameLine = element.text();
+            String[] resultSplit = element.toString().split("\"");
+            Line line = new Line(resultSplit[3], nameLine);
+        }
+    }
 
     @Override
     public String toString() {
         return id + " => " + name;
     }
 }
-
-
