@@ -21,16 +21,17 @@ public class Main {
 
     static ResultSet getAveragePurchase (Statement statement) throws SQLException {
         return statement.executeQuery("SELECT course_name, COUNT(*) as amount_purchase," +
-                "MAX(MONTH(subscription_date)) as amount_Months, " +
-                "COUNT(*)/MAX(MONTH(subscription_date)) as Average_purchase_per_Month" +
+                "COUNT(*)/MAX(MONTH(subscription_date)) as Average_purchase_per_Month, " +
+                "COUNT(*)/(MAX(MONTH(subscription_date))-(MIN(MONTH(subscription_date))-1)) as Average_purchase_per_Month" +
                 " FROM purchaselist GROUP BY(course_name)");
     }
 
     static void printResultSet(ResultSet resultSet) throws SQLException {
         while (resultSet.next()){
             String print = resultSet.getString("course_name") + " → " +
-                    (resultSet.getString("Average_purchase_per_Month")).substring(0,4);
+                    (resultSet.getString("Average_purchase_per_Month").substring(0,4));
             System.out.println(print);
         }
     }
+
 }
