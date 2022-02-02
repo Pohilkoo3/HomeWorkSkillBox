@@ -1,25 +1,24 @@
-package utils;
-import org.hibernate.Session;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class SessionFactory {
-    private static Session session;
+    private static org.hibernate.SessionFactory sessionFactory;
 
     public SessionFactory() {}
-    public static Session getSession(){
-        if (session == null) {
+    public static org.hibernate.SessionFactory getSession(){
+        if (sessionFactory == null) {
+
             try {
                 StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
                 Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
-                org.hibernate.SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
-                return sessionFactory.openSession();
+                sessionFactory = metadata.getSessionFactoryBuilder().build();
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }return session;
+        }return sessionFactory;
     }
 
 

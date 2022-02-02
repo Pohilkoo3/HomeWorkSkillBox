@@ -1,5 +1,6 @@
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "students")
@@ -11,11 +12,26 @@ public class Student {
     private String name;
 
     private int age;
+
     @Column(name = "registration_date")
     private LocalDateTime localDateTime;
 
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "Subscriptions",
+            joinColumns = {@JoinColumn(name = "student_id")},
+            inverseJoinColumns = {@JoinColumn(name = "course_id")})
+    private List<Course> courseList;
+
     public Student() {
 
+    }
+
+    public List<Course> getCourseList() {
+        return courseList;
+    }
+
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
     }
 
     public int getId() {
@@ -48,5 +64,13 @@ public class Student {
 
     public void setLocalDateTime(LocalDateTime localDateTime) {
         this.localDateTime = localDateTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Id=" + Id +
+                ", Имя ='" + name + '\'' +
+                ", age=" + age +
+                ", Date registration " + localDateTime.getMonth() + " " + localDateTime.getYear() ;
     }
 }
