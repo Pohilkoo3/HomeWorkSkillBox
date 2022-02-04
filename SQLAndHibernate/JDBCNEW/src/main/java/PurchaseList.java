@@ -15,6 +15,7 @@ public class PurchaseList {
 
     private int price;
     @Column(name = "subscription_date")
+
     private LocalDateTime subscriptionDate;
 
  public PurchaseList() {
