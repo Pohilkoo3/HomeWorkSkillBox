@@ -1,0 +1,41 @@
+import junit.framework.TestCase;
+
+import java.util.List;
+
+public class BankTest extends TestCase {
+    Bank bank;
+    List<Account> accountList;
+
+
+    @Override
+    protected void setUp() throws Exception {
+        bank = new Bank();
+        for (int i = 1; i < 10000; i++) {
+            Account account = new Account();
+            String accNumber = String.valueOf(i);
+            account.setAccNumber(accNumber);
+            account.setMoney((int) (Math.random()*((100_000 - 10_000) + 1)) + 10_000);
+            bank.putNewAccount(accNumber, account);
+        }
+        accountList = bank.getAllCountsMap().values().stream().toList();
+    }
+
+    public synchronized void testBank(){
+      long sum = bank.getSumAllAccounts();
+      long actual = sum;
+        for (int i = 1; i < accountList.size(); i++) { //делаем запросы по переводам между счетами
+            new Thread(new GetAccountBalance(accountList.get(i))).start();
+            long sumTransfer = (long) (Math.random()*((52_000 - 10_000) + 1)) + 10_000;
+            MakeTransfer makeTransfer = new MakeTransfer(bank, String.valueOf(i), String.valueOf(i+1), sumTransfer);
+            Thread thread = new Thread(makeTransfer);
+            thread.start();
+        }
+        long expected = bank.getSumAllAccounts();
+      assertEquals(expected, actual);
+    }
+
+    @Override
+    protected void tearDown() throws Exception {
+        super.tearDown();
+    }
+}
