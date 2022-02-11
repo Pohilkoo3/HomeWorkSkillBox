@@ -1,9 +1,13 @@
 public class Account {
     private volatile boolean lock;
     private volatile long money;
-    private String accNumber;
+    private final String accNumber;
 
-    public synchronized long getMoney() {
+    public Account(String accNumber) {
+        this.accNumber = accNumber;
+    }
+
+    public long getMoney() {
         return money;
     }
 
@@ -15,10 +19,7 @@ public class Account {
         this.lock = lock;
     }
 
-    public synchronized void setMoney(long money) {
-        if (lock){
-            return;
-        }
+    public void setMoney(long money) {
         this.money = money;
     }
 
@@ -26,14 +27,10 @@ public class Account {
         return accNumber;
     }
 
-    public void setAccNumber(String accNumber) {
-        this.accNumber = accNumber;
-    }
 
     @Override
     public String toString() {
         return "Account " + accNumber + " => " + money;
     }
-
 
 }

@@ -1,15 +1,12 @@
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Bank
 {
-    private Map<String, Account> accounts;
+    private volatile Hashtable<String, Account> accounts;
     private final Random random = new Random();
 
     public Bank() {
-        this.accounts = new HashMap<>();
+        this.accounts = new Hashtable<>();
     }
 
     public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
@@ -21,9 +18,7 @@ public class Bank
     public synchronized boolean transfer(String fromAccountNum, String toAccountNum, long amount) {
         Account accountFrom = accounts.get(fromAccountNum);
         Account accountTo = accounts.get(toAccountNum);
-
-        if (accountFrom.getMoney() < amount || amount < 0){
-            System.out.println("You haven't enough money on the account or input negative sum");
+        if (accountFrom.isLock() ||accountTo.isLock() || accountFrom.getMoney() < amount || amount < 0){
             return false;
         }
         accountFrom.setMoney(accountFrom.getMoney() - amount);
@@ -47,15 +42,15 @@ public class Bank
         return accounts.get(accountNum).getMoney();
     }
 
-    public synchronized long getSumAllAccounts() {
+    public long getSumAllAccounts() {
         long totalSum = 0;
         for (Map.Entry element : accounts.entrySet()) {
             totalSum+= accounts.get(element.getKey()).getMoney();
         }
         return totalSum;
     }
-    public HashMap<String, Account> getAllCountsMap(){
-        return new HashMap<>(accounts);
+    public Map<String, Account> getAllCountsMap(){
+        return accounts;
     }
 
 }

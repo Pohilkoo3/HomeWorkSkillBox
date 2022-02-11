@@ -10,22 +10,21 @@ public class BankTest extends TestCase {
     @Override
     protected void setUp() throws Exception {
         bank = new Bank();
-        for (int i = 1; i < 10000; i++) {
-            Account account = new Account();
+        for (int i = 1; i < 15000; i++) {
             String accNumber = String.valueOf(i);
-            account.setAccNumber(accNumber);
+            Account account = new Account(accNumber);
             account.setMoney((int) (Math.random()*((100_000 - 10_000) + 1)) + 10_000);
             bank.putNewAccount(accNumber, account);
         }
         accountList = bank.getAllCountsMap().values().stream().toList();
     }
 
-    public synchronized void testBank(){
+    public void testBank(){
       long sum = bank.getSumAllAccounts();
       long actual = sum;
-        for (int i = 1; i < accountList.size(); i++) { //делаем запросы по переводам между счетами
+        for (int i = 1; i < accountList.size(); i++) {
             new Thread(new GetAccountBalance(accountList.get(i))).start();
-            long sumTransfer = (long) (Math.random()*((52_000 - 10_000) + 1)) + 10_000;
+            long sumTransfer = (long) (Math.random()*((62_000 - 20_000) + 1)) + 20_000;
             MakeTransfer makeTransfer = new MakeTransfer(bank, String.valueOf(i), String.valueOf(i+1), sumTransfer);
             Thread thread = new Thread(makeTransfer);
             thread.start();
