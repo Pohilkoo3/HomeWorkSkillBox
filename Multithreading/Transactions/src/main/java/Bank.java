@@ -2,11 +2,11 @@ import java.util.*;
 
 public class Bank
 {
-    private volatile Hashtable<String, Account> accounts;
+    private volatile HashMap<String, Account> accounts;
     private final Random random = new Random();
 
     public Bank() {
-        this.accounts = new Hashtable<>();
+        this.accounts = new HashMap<>();
     }
 
     public synchronized boolean isFraud(String fromAccountNum, String toAccountNum, long amount)
@@ -15,14 +15,19 @@ public class Bank
         return random.nextBoolean();
     }
 
-    public synchronized boolean transfer(String fromAccountNum, String toAccountNum, long amount) {
+    public boolean transfer(String fromAccountNum, String toAccountNum, long amount) {
         Account accountFrom = accounts.get(fromAccountNum);
         Account accountTo = accounts.get(toAccountNum);
-        if (accountFrom.isLock() ||accountTo.isLock() || accountFrom.getMoney() < amount || amount < 0){
+        if (accountFrom.isLock() || accountTo.isLock() || accountFrom.getMoney() < amount || amount < 0){
             return false;
         }
-        accountFrom.setMoney(accountFrom.getMoney() - amount);
-        accountTo.setMoney(accountTo.getMoney() + amount);
+        synchronized (accountFrom){
+            accountFrom.setMoney(accountFrom.getMoney() - amount);
+            synchronized (accountTo){
+                accountTo.setMoney(accountTo.getMoney() + amount);
+            }
+        }
+
         if (amount > 50_000){
             try {
               boolean availableToTransfer = isFraud(fromAccountNum, toAccountNum, amount);

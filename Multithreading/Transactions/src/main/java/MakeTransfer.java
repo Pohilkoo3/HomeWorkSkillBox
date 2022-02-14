@@ -1,8 +1,8 @@
 public class MakeTransfer implements Runnable {
-    private Bank bank;
-    private String fromAccountNum;
-    private String toAccountNum;
-    private long amount;
+    private final Bank bank;
+    private final String fromAccountNum;
+    private final String toAccountNum;
+    private final long amount;
 
     public MakeTransfer(Bank bank, String fromAccountNum, String toAccountNum, long amount) {
         this.bank = bank;

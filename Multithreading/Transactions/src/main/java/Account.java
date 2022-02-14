@@ -1,6 +1,6 @@
 public class Account {
-    private volatile boolean lock;
-    private volatile long money;
+    private boolean lock;
+    private long money;
     private final String accNumber;
 
     public Account(String accNumber) {
