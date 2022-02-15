@@ -35,11 +35,6 @@ public class Account implements Comparable<Account> {
 
     @Override
     public int compareTo(Account o) {
-        if (Integer.parseInt(this.getAccNumber()) > Integer.parseInt(o.getAccNumber())) {
-            return 1;
-        } else if (Integer.parseInt(this.getAccNumber()) < Integer.parseInt(o.getAccNumber())) {
-            return -1;
-        }
-        return 0;
+       return this.getAccNumber().compareTo(o.getAccNumber());
     }
 }

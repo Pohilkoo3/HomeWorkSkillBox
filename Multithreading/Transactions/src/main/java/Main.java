@@ -1,41 +1,29 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import java.util.*;
+
 
 
 public class Main {
     private static Logger logger = LogManager.getRootLogger();
     public static void main(String[] args) {
        Bank bank = new Bank();
-        for (int i = 1; i < 10; i++) {
-            Account account = new Account();
+        for (int i = 1; i < 50; i++) {
             String accNumber = String.valueOf(i);
-            account.setAccNumber(accNumber);
-            account.setMoney((int) (Math.random()*((100_000 - 10_000) + 1)) + 10_000);
+            Account account = new Account(accNumber);
+            account.setMoney(150_000L);
             bank.putNewAccount(accNumber, account);
         }
-
-        List<Account> accountList = bank.getAllCountsMap().values().stream().toList();
-
-        long before = bank.getSumAllAccounts();
-        System.out.println("До операций перевода сумма всех счетов => " + before);
-
-        for (int i = 1; i < accountList.size(); i++) { //делаем запросы по переводам между счетами
-            long sumTransfer = (long) (Math.random()*((52_000 - 10_000) + 1)) + 10_000;
-            MakeTransfer makeTransfer = new MakeTransfer(bank, String.valueOf(i), String.valueOf(i+1), sumTransfer);
+        MakeTransfer makeTransfer = new MakeTransfer(bank, String.valueOf(1), String.valueOf(2), 10);
+        MakeTransfer makeTransfer2 = new MakeTransfer(bank, String.valueOf(2), String.valueOf(1), 20);
+        for (int i = 0; i < 10; i++) {
             Thread thread = new Thread(makeTransfer);
+            Thread thread2 = new Thread(makeTransfer2);
             thread.start();
-          }
-
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            thread2.start();
         }
 
-        long after = bank.getSumAllAccounts();
-        System.out.println("After операций перевода сумма всех счетов => " + after);
-        System.out.println(after == before);
+
+
 
     }
 }

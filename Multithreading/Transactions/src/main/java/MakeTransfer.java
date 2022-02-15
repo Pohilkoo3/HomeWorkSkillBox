@@ -1,4 +1,4 @@
-public class MakeTransfer implements Runnable {
+public class MakeTransfer implements Runnable{
     private final Bank bank;
     private final String fromAccountNum;
     private final String toAccountNum;
@@ -13,6 +13,12 @@ public class MakeTransfer implements Runnable {
 
     @Override
     public void run() {
+
+//        System.out.println("Transfer From begun it's work => " + fromAccountNum);
         bank.transfer(fromAccountNum, toAccountNum, amount);
+//        System.out.println("Transfer From end it's work => " + fromAccountNum);
+
     }
+
+
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <File name="WriteQueries" fileName="Transactions/logs/queries.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="MakeQueries" fileName="Transactions/logs/makeQueries.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="LogTransfer" fileName="Transactions/logs/transfers.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File> ErrorTransfer
+        <File name="ErrorTransfer" fileName="Transactions/logs/errorsTransfer.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </appenders>
+
+    <loggers>
+        <Logger name= "QueryGetBalance" level="info" >
+            <AppenderRef ref="WriteQueries"/>
+        </Logger>
+        <Logger name= "LoggerTransfer" level="info" >
+            <AppenderRef ref="LogTransfer"/>
+        </Logger>
+        <Logger name= "MakeQueries" level="info" >
+            <AppenderRef ref="MakeQueries"/>
+        </Logger>
+        <Logger name= "ErrorTransfer" level="info" >
+            <AppenderRef ref="ErrorTransfer"/>
+        </Logger>
+
+
+        <root level="error">
+            <appender-ref ref="" level="info"/>
+        </root>
+    </loggers>
+</configuration>

@@ -4,6 +4,9 @@ public class Main
 {
     public static void main(String[] args)
     {
+        System.out.println("asddsadc");
+        System.exit(0);
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите путь к папке которую необходимо копировать.");
         String testSources = scanner.nextLine();
