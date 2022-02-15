@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/homework_9.1/Hospital/pom.xml" />
+        <option value="$PROJECT_DIR$/homework_9.1/ReverseArray/pom.xml" />
+        <option value="$PROJECT_DIR$/homework_9.1/TwoDimensionalArray/pom.xml" />
+        <option value="$PROJECT_DIR$/homework_9.2/TodoList/pom.xml" />
+        <option value="$PROJECT_DIR$/homework_9.3/EmailList/pom.xml" />
+        <option value="$PROJECT_DIR$/homework_9.4/PhoneBook/pom.xml" />
+        <option value="$PROJECT_DIR$/homework_9.5/CoolNumber/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="openjdk-17" project-jdk-type="JavaSDK" />
+</project>
