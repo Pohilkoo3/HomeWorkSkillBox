@@ -1,4 +1,4 @@
-public class Account {
+public class Account implements Comparable<Account> {
     private boolean lock;
     private long money;
     private final String accNumber;
@@ -33,4 +33,13 @@ public class Account {
         return "Account " + accNumber + " => " + money;
     }
 
+    @Override
+    public int compareTo(Account o) {
+        if (Integer.parseInt(this.getAccNumber()) > Integer.parseInt(o.getAccNumber())) {
+            return 1;
+        } else if (Integer.parseInt(this.getAccNumber()) < Integer.parseInt(o.getAccNumber())) {
+            return -1;
+        }
+        return 0;
+    }
 }

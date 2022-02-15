@@ -18,12 +18,14 @@ public class Bank
     public boolean transfer(String fromAccountNum, String toAccountNum, long amount) {
         Account accountFrom = accounts.get(fromAccountNum);
         Account accountTo = accounts.get(toAccountNum);
-        if (accountFrom.isLock() || accountTo.isLock() || accountFrom.getMoney() < amount || amount < 0){
-            return false;
-        }
-        synchronized (accountFrom){
-            accountFrom.setMoney(accountFrom.getMoney() - amount);
-            synchronized (accountTo){
+        Account lowSyncAccount = accountFrom.compareTo(accountTo) < 0 ? accountFrom : accountTo;// могут ли счет отправления и зачисления быть одинаковыми?
+        Account topSyncAccount = accountFrom.compareTo(accountTo) > 0 ? accountFrom : accountTo;
+        synchronized (lowSyncAccount) {
+            synchronized (topSyncAccount){
+                if (accountFrom.isLock() || accountTo.isLock() || accountFrom.getMoney() < amount || amount < 0){
+                    return false;
+                }
+                accountFrom.setMoney(accountFrom.getMoney() - amount);
                 accountTo.setMoney(accountTo.getMoney() + amount);
             }
         }
