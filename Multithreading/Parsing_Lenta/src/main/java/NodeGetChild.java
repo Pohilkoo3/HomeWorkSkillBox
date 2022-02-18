@@ -1,21 +1,20 @@
 import java.util.*;
 import java.util.concurrent.RecursiveTask;
 
-public class NodeGetChild extends RecursiveTask<Set<String>> {
+public class NodeGetChild extends RecursiveTask<Set<Node>> {
     private Node node;
 
-    public NodeGetChild(String path) {
-        this.node = new Node(path);
+    public NodeGetChild(Node node) {
+            this.node = node;
         node.makeChildren();
-
     }
 
     @Override
-    protected Set<String> compute() {
-        TreeSet<String> result = new TreeSet<>();
-        result.addAll(node.getNodesChild());
+    protected Set<Node> compute() {
+        HashSet<Node> result = new HashSet<>();
+        result.addAll(node.getChildNods());
         List<NodeGetChild> nodeGetChildren = new ArrayList<>();
-        for (String element : node.getNodesChild()) {
+        for (Node element : node.getChildNods()) {
             NodeGetChild task = new NodeGetChild(element);
             task.fork();
             nodeGetChildren.add(task);
