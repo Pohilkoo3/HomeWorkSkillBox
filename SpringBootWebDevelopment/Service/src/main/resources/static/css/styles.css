@@ -1,0 +1,68 @@
+body{
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+
+.add-text{
+    width:300px;
+    height:150px;
+    border: 1px solid gray;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: #9e9e9e57;
+    margin-bottom: 30px;
+}
+
+.add-task{
+    position:absolute;
+    left:670px;
+    top:180px;
+    width:100px;
+    height:50px;
+}
+
+.Add-text-task{
+display:flex;
+}
+
+.buttons{
+display:flex;
+flex-direction: column;
+width:300px;
+margin-bottom: 10px;
+}
+
+.getAllTasks{
+margin-bottom: 10px;
+}
+
+.deleteTaskId{
+margin-bottom: 10px;
+}
+.getTaskId{
+margin-bottom: 10px;
+}
+.changeTaskId{
+margin-bottom: 10px;
+}
+.DeleteAllTasks{
+margin-bottom: 10px;
+}
+.all-tasks{
+    width:600px;
+    height:150px;
+    border: 1px solid gray;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: #9e9e9e57;
+    margin-bottom: 30px;
+}
+
+.mapping-all-tasks{
+    width:600px;
+    height:350px;
+    border: 1px solid gray;
+}
+
+

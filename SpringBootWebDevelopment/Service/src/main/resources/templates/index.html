@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TasksList</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/task.js"></script>
+</head>
+<body>
+<h1>Лист записей важнейших дел (<span th:text="${tasksCount}">0</span>)</h1>
+<section class="Add-text-task">
+    <textarea class="add-text">Текст дела</textarea>
+    <button class="add-task">Добавить дело</button>
+</section>
+<section class="buttons">
+    <button class="getAllTasks">Получить список всех дел</button>
+    <button class="DeleteAllTasks">Удалить все дела</button>
+    <div class="all-tasks">Здесь появится ответ на ваш запрос</div>
+</section>
+<div class="mapping-all-tasks">
+    <div th:each="task : ${task}" th:attr="data-id=${task.id}" th:text="${task.textTask}">
+    </div>
+</div>
+
+</body>
+</html>
