@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/09_ArraysAndCollections.iml" filepath="$PROJECT_DIR$/.idea/09_ArraysAndCollections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_9.5/CoolNumber/CoolNumber.iml" filepath="$PROJECT_DIR$/homework_9.5/CoolNumber/CoolNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_9.3/EmailList/EmailList.iml" filepath="$PROJECT_DIR$/homework_9.3/EmailList/EmailList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_9.1/Hospital/Hospital.iml" filepath="$PROJECT_DIR$/homework_9.1/Hospital/Hospital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_9.4/PhoneBook/PhoneBook.iml" filepath="$PROJECT_DIR$/homework_9.4/PhoneBook/PhoneBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_9.1/ReverseArray/ReverseArray.iml" filepath="$PROJECT_DIR$/homework_9.1/ReverseArray/ReverseArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_9.2/TodoList/TodoList.iml" filepath="$PROJECT_DIR$/homework_9.2/TodoList/TodoList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_9.1/TwoDimensionalArray/TwoDimensionalArray.iml" filepath="$PROJECT_DIR$/homework_9.1/TwoDimensionalArray/TwoDimensionalArray.iml" />
+    </modules>
+  </component>
+</project>

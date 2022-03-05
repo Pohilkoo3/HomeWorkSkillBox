@@ -7,18 +7,18 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class SplitTread extends Thread{
+public class SplitTread implements Runnable{
     private File[] files;
     private String dst;
-    private int weight;
+    private int width;
     private static Logger loggerFiles = LogManager.getLogger("WriteFiles");
     private static Logger errors = LogManager.getLogger("Errors");
 
 
-    public SplitTread(File[] files, String dst, int weight){
+    public SplitTread(File[] files, String dst, int width){
         this.files = files;
         this.dst = dst;
-        this.weight = weight;
+        this.width = width;
     }
 
 
@@ -29,7 +29,6 @@ public class SplitTread extends Thread{
 
             if (!file.getName().endsWith("jpg")){
                 errors.error(file.getName());
-                System.out.println("HELLO");
                 continue;
             }
             File dstFile = new File(dstDir + "\\" + file.getName());

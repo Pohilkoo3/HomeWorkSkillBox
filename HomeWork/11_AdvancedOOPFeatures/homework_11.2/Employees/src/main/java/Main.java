@@ -1,15 +1,19 @@
-import java.util.Calendar;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
 
 public class Main {
 
     private static final String STAFF_TXT = "data/staff.txt";
     public static void main(String[] args) {
-        List<Employee> staff = Employee.loadStaffFromFile(STAFF_TXT);
-        System.out.println(findEmployeeWithHighestSalary(staff,2017));
+//        List<Employee> staff = Employee.loadStaffFromFile(STAFF_TXT);
+        Integer[] integers = {1,2,3,4,5,6,7,8,9};
+        Arrays.stream(integers)
+                .map(String::valueOf)
+                .reduce((s1, s2) -> s1 + s2)
+                .ifPresent(System.out::println);
+
     }
 
     public static Employee findEmployeeWithHighestSalary(List<Employee> staff, int year) {
