@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainForm">
+  <grid id="27dc6" binding="myPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="603" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="520" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6a6a4" class="javax.swing.JButton" binding="collaps">
+            <constraints/>
+            <properties>
+              <text value="Проверить"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="b352" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <opaque value="true"/>
+          <preferredSize width="67" height="150"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="2a424" class="javax.swing.JTextField" binding="surName">
+            <constraints/>
+            <properties>
+              <minimumSize width="100" height="60"/>
+              <opaque value="false"/>
+              <preferredSize width="349" height="30"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="86d96" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Фамилия"/>
+            </properties>
+          </component>
+          <component id="2fc93" class="javax.swing.JTextField" binding="name">
+            <constraints/>
+            <properties>
+              <preferredSize width="349" height="30"/>
+            </properties>
+          </component>
+          <component id="6d4b6" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Имя"/>
+            </properties>
+          </component>
+          <component id="16828" class="javax.swing.JTextField" binding="middleName">
+            <constraints/>
+            <properties>
+              <preferredSize width="349" height="30"/>
+            </properties>
+          </component>
+          <component id="1256c" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Отчество"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
