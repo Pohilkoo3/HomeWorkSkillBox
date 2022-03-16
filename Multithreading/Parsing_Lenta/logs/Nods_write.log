@@ -1,290 +1,154 @@
-2022-02-17 13:05:57.587 [main] INFO  LoggerNods - Node → https://skillbox.ru
-2022-02-17 13:05:58.636 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/otzyvy
-2022-02-17 13:05:58.802 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/career
-2022-02-17 13:05:58.960 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/code
-2022-02-17 13:05:59.165 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/company
-2022-02-17 13:05:59.167 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/devops
-2022-02-17 13:05:59.362 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/jobs
-2022-02-17 13:05:59.473 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/marketing
-2022-02-17 13:05:59.589 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/privacy_policy.pdf
-2022-02-17 13:05:59.591 [ForkJoinPool-1-worker-3] INFO  LoggerNods - Node → https://skillbox.ru/marketing/marketing/faculty/electronic-commerce
-2022-02-17 13:05:59.643 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/postman
-2022-02-17 13:05:59.686 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/management
-2022-02-17 13:05:59.901 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/other
-2022-02-17 13:05:59.909 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/management/management/faculty/education
-2022-02-17 13:06:00.076 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/general-education
-2022-02-17 13:06:00.166 [ForkJoinPool-1-worker-3] INFO  LoggerNods - Node → https://skillbox.ru/marketing/marketing/faculty/performance-marketing
-2022-02-17 13:06:00.208 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/engineering
-2022-02-17 13:06:00.269 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sketching
-2022-02-17 13:06:00.365 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/terms_of_use.pdf
-2022-02-17 13:06:00.395 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/management/management/faculty/projects-and-products
-2022-02-17 13:06:00.433 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/multimedia
-2022-02-17 13:06:00.655 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/contacts
-2022-02-17 13:06:00.783 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/trendy
-2022-02-17 13:06:00.800 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/design
-2022-02-17 13:06:00.826 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/management/management/faculty/management-and-analytics
-2022-02-17 13:06:00.955 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/games
-2022-02-17 13:06:00.992 [ForkJoinPool-1-worker-3] INFO  LoggerNods - Node → https://skillbox.ru/marketing/marketing/faculty/analytics
-2022-02-17 13:06:01.118 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/oferta.pdf
-2022-02-17 13:06:01.218 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/psychology
-2022-02-17 13:06:01.272 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/filosofiya
-2022-02-17 13:06:01.310 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/management/management/faculty/finance-and-accounting
-2022-02-17 13:06:01.429 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/english
-2022-02-17 13:06:01.561 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/payments
-2022-02-17 13:06:01.695 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/lectoriy
-2022-02-17 13:06:01.783 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/algoritmy-i-struktury-dannykh
-2022-02-17 13:06:01.827 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media
-2022-02-17 13:06:01.842 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/multimedia/multimedia/faculty/videos
-2022-02-17 13:06:01.856 [ForkJoinPool-1-worker-3] INFO  LoggerNods - Node → https://skillbox.ru/design/design/faculty/photo-fashion-beauty
-2022-02-17 13:06:02.101 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/teachers
-2022-02-17 13:06:02.425 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/menedzhment
-2022-02-17 13:06:02.436 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/games/games/faculty/graphics-and-animation
-2022-02-17 13:06:02.462 [ForkJoinPool-1-worker-3] INFO  LoggerNods - Node → https://skillbox.ru/design/design/faculty/digital-design
-2022-02-17 13:06:02.843 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/razvitie-produkta
-2022-02-17 13:06:02.901 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/games/games/faculty/game-development
-2022-02-17 13:06:02.929 [ForkJoinPool-1-worker-3] INFO  LoggerNods - Node → https://skillbox.ru/lectoriy/lectoriy/records
-2022-02-17 13:06:03.316 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/monetizacia
-2022-02-17 13:06:03.370 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/games/games/faculty/esports
-2022-02-17 13:06:03.823 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/matematika
-2022-02-17 13:06:04.191 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/games/games/faculty/sport
-2022-02-17 13:06:04.225 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/2d-i-3d-grafika
-2022-02-17 13:06:04.623 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/orm
-2022-02-17 13:06:04.664 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education/chuvstvo-izbytochnoy-kvalifikatsii-svyazannoe-s-obrazovaniem-vedyet-k-nedovolstvu-rabotoy
-2022-02-17 13:06:05.046 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/astronomiya
-2022-02-17 13:06:05.052 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/design/sony-naushniki
-2022-02-17 13:06:05.443 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/swift
-2022-02-17 13:06:05.489 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/design/ask-expert-wage
-2022-02-17 13:06:05.895 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/topic/articles
-2022-02-17 13:06:05.934 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/code/faculty/web-development
-2022-02-17 13:06:06.270 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/gamedev/-pravitelstvo-khochet-finansirovat-patrioticheskie-igry-za-schyet-steam-i-drugikh-ploshchadok
-2022-02-17 13:06:06.381 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kotlin
-2022-02-17 13:06:06.624 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/gamedev/yennifer-iz-vedmaka-samyy-privlekatelnyy-zhenskiy-personazh-dlya-rossiyskikh-geymerovmuzhchin
-2022-02-17 13:06:06.806 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/3ds-max
-2022-02-17 13:06:07.016 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education/uchyenye-obnaruzhili-chto-mozg-cheloveka-poraznomu-reagiruet-na-slozhenie-i-vychitanie
-2022-02-17 13:06:07.209 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/dizayn-interfeysov
-2022-02-17 13:06:07.368 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/management/v-belgii-razreshili-chetyryekhdnevnuyu-rabochuyu-nedelyu
-2022-02-17 13:06:07.592 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/targetirovannaya-reklama
-2022-02-17 13:06:07.845 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education/vuzam-predrekli-risk-poteri-konkurentosposobnosti
-2022-02-17 13:06:08.009 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/code/faculty/mobile-development
-2022-02-17 13:06:08.219 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/code/vyshla-visual-studio-2022-171-produktivnost-vyrosla-do-maksimuma
-2022-02-17 13:06:08.431 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/adobepremier
-2022-02-17 13:06:08.829 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/photoshop
-2022-02-17 13:06:08.952 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/marketing/konkurentnaya-zarplata-worklife-balance-i-dms-chto-marketologi-tsenyat-v-rabote
-2022-02-17 13:06:09.236 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/adobe-illustrator
-2022-02-17 13:06:09.309 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/
-2022-02-17 13:06:09.448 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/topic/opinions
-2022-02-17 13:06:09.642 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/investitsii
-2022-02-17 13:06:09.960 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education/my-zagruzhaem-detey-kak-budto-u-nikh-beskonechnyy-resurs
-2022-02-17 13:06:10.029 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/semka-na-mobilnyi-telefon
-2022-02-17 13:06:10.395 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/gamedev
-2022-02-17 13:06:10.463 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/ab-testy
-2022-02-17 13:06:10.850 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/veb-dizayn
-2022-02-17 13:06:10.880 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/bank-jpmorgan-otkrylsya-v-metavselennoy
-2022-02-17 13:06:11.241 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education/kak-razvivat-liderov-ne-otryvaya-ikh-ot-raboty-keys-gazprom-nefti
-2022-02-17 13:06:11.261 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/evolyuciya
-2022-02-17 13:06:11.616 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/design
-2022-02-17 13:06:11.685 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/rabota-s-kameroi
-2022-02-17 13:06:11.782 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business
-2022-02-17 13:06:11.982 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education/pedagogika-stala-tretim-po-populyarnosti-napravleniem-podgotovki-u-abiturientov
-2022-02-17 13:06:12.150 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses
-2022-02-17 13:06:12.324 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/management
-2022-02-17 13:06:12.523 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/v-kosmos-za-450-tysyach-dollarov-virgin-galactic-nachinaet-prodazhu-biletov
-2022-02-17 13:06:12.874 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/neyroset-nauchili-flirtovat
-2022-02-17 13:06:13.267 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/obrazovatelnyy-kholding-ultimate-education-privlyek-500-mln-rubley-investitsiy
-2022-02-17 13:06:13.651 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/management/upravlenie-personalom-chto-eto-takoe
-2022-02-17 13:06:14.033 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/marketing
-2022-02-17 13:06:14.184 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/gamedev/ya-poluchil-shans-poprobovat-chtoto-novoe-tosikhiro-nagosi-o-rabote-svoey-novoy-studii
-2022-02-17 13:06:14.282 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/autocad
-2022-02-17 13:06:14.533 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education/obuchenie-odaryennykh-detey-stanovitsya-bolee-dostupnym-no-ne-vezde-konechno
-2022-02-17 13:06:14.676 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/komandnaya-stroka-(bash)
-2022-02-17 13:06:14.876 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/obyem-rynka-metavselennykh-v-kitae-mozhet-sostavit-8-trln-dollarov
-2022-02-17 13:06:15.094 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kompozitsiya-i-tsvet
-2022-02-17 13:06:15.242 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/design/chaynik-malevicha
-2022-02-17 13:06:15.482 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/ux-ui
-2022-02-17 13:06:15.620 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/design/fond-skolkovo
-2022-02-17 13:06:15.881 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/samorazvitie
-2022-02-17 13:06:16.265 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/code/go-v-go-kak-montazhnik-brosil-vsye-v-37-let-za-pyat-mesyatsev-vyuchil-yazyk-i-nashyel-rabotu
-2022-02-17 13:06:16.294 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/krosplatformennaya-razrabotka
-2022-02-17 13:06:16.634 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/platformu-tsifrovogo-rublya-nachali-testirovat
-2022-02-17 13:06:16.733 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/storitelling
-2022-02-17 13:06:16.979 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/pochemu-uchyenye-i-vizionery-ne-zhdut-nichego-khoroshego-ot-metavselennykh-i-vam-ne-stoit
-2022-02-17 13:06:17.143 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/upravlenie-komandami
-2022-02-17 13:06:17.544 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/pr
-2022-02-17 13:06:17.645 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/code
-2022-02-17 13:06:17.796 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/growth
-2022-02-17 13:06:17.945 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/about-media
-2022-02-17 13:06:17.952 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/roditelstvo
-2022-02-17 13:06:18.146 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/education
-2022-02-17 13:06:18.298 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/media/media/business/rossiyanam-mogut-predlozhit-kreditnye-kanikuly
-2022-02-17 13:06:18.386 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/animatsiya-interfeysov
-2022-02-17 13:06:18.796 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/korporativnaya-kultura
-2022-02-17 13:06:19.240 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/konditer
-2022-02-17 13:06:19.613 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/digital-agentstva
-2022-02-17 13:06:20.006 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/selenium-webdriver
-2022-02-17 13:06:20.447 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/issledovanie-auditorii
-2022-02-17 13:06:20.824 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/google-skripty
-2022-02-17 13:06:21.228 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/vkontakte
-2022-02-17 13:06:21.645 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/smm
-2022-02-17 13:06:22.325 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/prototipirovanie
-2022-02-17 13:06:23.037 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kommyuniti
-2022-02-17 13:06:23.811 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/socialnye-seti
-2022-02-17 13:06:24.194 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/beauty
-2022-02-17 13:06:24.605 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/fashion-design
-2022-02-17 13:06:24.991 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/istoriya
-2022-02-17 13:06:25.434 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/angliiskii-yazyk
-2022-02-17 13:06:25.936 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/avid
-2022-02-17 13:06:26.394 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/custdev
-2022-02-17 13:06:26.835 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/power-bi
-2022-02-17 13:06:27.229 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/vr-ar
-2022-02-17 13:06:27.599 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/java
-2022-02-17 13:06:28.064 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/edtech
-2022-02-17 13:06:28.484 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kontsept-art
-2022-02-17 13:06:28.867 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kulinarija
-2022-02-17 13:06:29.548 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/arkhitektura
-2022-02-17 13:06:29.964 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/floristika
-2022-02-17 13:06:30.355 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/iskustvennyy-intellekt
-2022-02-17 13:06:30.765 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/zabota-o-sebe
-2022-02-17 13:06:31.192 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/avtorskoe-pravo
-2022-02-17 13:06:31.575 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kontekstnaya-reklama
-2022-02-17 13:06:32.012 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/rabota-s-tablitsami
-2022-02-17 13:06:32.418 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/s-plus
-2022-02-17 13:06:32.800 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/vyorstka
-2022-02-17 13:06:33.179 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/linux
-2022-02-17 13:06:33.546 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/lidogeneratsiya
-2022-02-17 13:06:33.979 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/portfolio-dizaynera
-2022-02-17 13:06:34.359 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/3d-modelirovanie
-2022-02-17 13:06:34.735 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/oformlenie-prezentatsiy
-2022-02-17 13:06:35.111 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/otnosheniya
-2022-02-17 13:06:35.524 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/shrifty
-2022-02-17 13:06:36.008 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/code/faculty/it-infrastructure
-2022-02-17 13:06:36.395 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/analitika
-2022-02-17 13:06:37.124 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/cinema-4d
-2022-02-17 13:06:37.514 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/marketing
-2022-02-17 13:06:37.883 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/data-science
-2022-02-17 13:06:38.271 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/motion-design
-2022-02-17 13:06:39.306 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/teksturirovanie
-2022-02-17 13:06:40.484 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/prodazhi
-2022-02-17 13:06:40.888 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/3d-animaciya
-2022-02-17 13:06:44.333 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/motivatsiya
-2022-02-17 13:06:44.714 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/deserty
-2022-02-17 13:06:45.120 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/fashion-sketching
-2022-02-17 13:06:45.499 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/ypravlenie
-2022-02-17 13:06:45.956 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/google-tablitsy
-2022-02-17 13:06:49.363 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/klipy
-2022-02-17 13:06:49.758 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/framework
-2022-02-17 13:06:50.141 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/tiktok
-2022-02-17 13:06:53.835 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/crm
-2022-02-17 13:06:54.246 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/git
-2022-02-17 13:07:00.647 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/s
-2022-02-17 13:07:01.062 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/upravlenie-proektami
-2022-02-17 13:07:01.445 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/teoria-myziky
-2022-02-17 13:07:04.812 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/video-proizvodstvo
-2022-02-17 13:07:08.201 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/after-effects
-2022-02-17 13:07:08.617 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/vzaimodeistvie-s-zakazchikom
-2022-02-17 13:07:12.033 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kibersport
-2022-02-17 13:07:12.462 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/clo3d
-2022-02-17 13:07:12.839 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/istoriy-kino
-2022-02-17 13:07:13.225 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/e-mail
-2022-02-17 13:07:13.624 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/trafik
-2022-02-17 13:07:14.510 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/bazy-dannykh
-2022-02-17 13:07:15.618 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/pabota-s-blogerami
-2022-02-17 13:07:16.393 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/geymdizayn
-2022-02-17 13:07:16.846 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/landshaftnyy-dizayn
-2022-02-17 13:07:17.225 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/marketing-igr
-2022-02-17 13:07:17.645 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/informacionnaya-bezopasnost
-2022-02-17 13:07:18.078 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/archicad
-2022-02-17 13:07:18.458 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/davinci
-2022-02-17 13:07:21.841 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kino
-2022-02-17 13:07:22.221 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sql
-2022-02-17 13:07:22.905 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/konkurentnyy-analiz
-2022-02-17 13:07:26.522 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/mobilnye-prilozheniya
-2022-02-17 13:07:29.923 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/avtovoronki
-2022-02-17 13:07:30.348 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/dekorirovanie
-2022-02-17 13:07:36.855 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/dizayn-kontseptsiya
-2022-02-17 13:07:37.576 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/administrirovanie
-2022-02-17 13:07:38.034 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/protools
-2022-02-17 13:07:41.449 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sketch
-2022-02-17 13:07:41.993 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/stsenariy
-2022-02-17 13:07:45.385 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/python
-2022-02-17 13:07:49.131 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/yunit-ekonomika
-2022-02-17 13:07:52.509 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/saund-design
-2022-02-17 13:07:55.905 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/upravlenie-komandoi
-2022-02-17 13:07:56.342 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/prodyusirovanie-kursov
-2022-02-17 13:08:00.767 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/golang
-2022-02-17 13:08:04.151 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/docker
-2022-02-17 13:08:04.599 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/django
-2022-02-17 13:08:08.003 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/hr
-2022-02-17 13:08:11.379 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kommynikazia
-2022-02-17 13:08:11.775 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/php
-2022-02-17 13:08:12.158 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/zvykozapis
-2022-02-17 13:08:12.522 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/treiding
-2022-02-17 13:08:16.607 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/ableton
-2022-02-17 13:08:20.030 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/osnovy-kompozisii
-2022-02-17 13:08:20.713 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kontrol
-2022-02-17 13:08:21.095 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/rechevye-praktiki
-2022-02-17 13:08:21.457 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/seo
-2022-02-17 13:08:21.834 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/russkii-yazyk
-2022-02-17 13:08:22.238 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/testirovanie
-2022-02-17 13:08:22.630 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/dizayn-interera
-2022-02-17 13:08:26.011 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/prodyusirovanie
-2022-02-17 13:08:26.395 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/makrosy
-2022-02-17 13:08:26.924 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kontent
-2022-02-17 13:08:27.326 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/razrabotka-igr
-2022-02-17 13:08:30.727 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/frontend-razrabotka
-2022-02-17 13:08:31.155 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/lightroom
-2022-02-17 13:08:31.547 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/yazyk-r
-2022-02-17 13:08:31.941 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/literatura
-2022-02-17 13:08:32.345 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/3d
-2022-02-17 13:08:32.804 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sew
-2022-02-17 13:08:33.490 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/facebook
-2022-02-17 13:08:36.885 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/soft-skills
-2022-02-17 13:08:37.308 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/predprinimatelstvo
-2022-02-17 13:08:40.745 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/rabota-s-dokumentami
-2022-02-17 13:08:41.502 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/biznes
-2022-02-17 13:08:41.961 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/montazh
-2022-02-17 13:08:42.378 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/fashion-baing
-2022-02-17 13:08:42.755 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/unreal-engine-4
-2022-02-17 13:08:43.273 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/veb-prilozheniya
-2022-02-17 13:08:43.664 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/uvelirniy-dizain
-2022-02-17 13:08:44.102 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/abletonlive
-2022-02-17 13:08:44.479 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/khobbi
-2022-02-17 13:08:44.846 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sozdanie-saytov
-2022-02-17 13:08:45.227 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/javascript
-2022-02-17 13:08:45.724 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/dizayn-dokument
-2022-02-17 13:08:46.121 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sport
-2022-02-17 13:08:46.524 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/backend-razrabotka
-2022-02-17 13:08:46.975 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/issledovanie
-2022-02-17 13:08:47.407 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/machine-learning
-2022-02-17 13:08:47.801 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/igrovye dvizhki
-2022-02-17 13:08:48.215 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/android
-2022-02-17 13:08:48.895 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/speceffekty
-2022-02-17 13:08:49.273 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/strategiya
-2022-02-17 13:08:50.058 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kontent-marketing
-2022-02-17 13:08:50.447 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/kubernetes
-2022-02-17 13:08:51.137 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/dizain-sistemy
-2022-02-17 13:08:51.542 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/obrabotka-photografiy
-2022-02-17 13:08:51.972 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/unity
-2022-02-17 13:08:52.396 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/svedenie-i-mastering
-2022-02-17 13:08:52.770 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/tvorchestvo
-2022-02-17 13:08:53.133 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/vizualizatsiya-dannykh
-2022-02-17 13:08:53.497 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sozdanie-settinga
-2022-02-17 13:08:56.883 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/finansy
-2022-02-17 13:08:57.272 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/sozdanie-myziky
-2022-02-17 13:09:00.646 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/performance-marketing
-2022-02-17 13:09:01.096 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/figma
-2022-02-17 13:09:04.462 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/brend
-2022-02-17 13:09:04.839 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/dizayn-sredy
-2022-02-17 13:09:05.210 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/1c
-2022-02-17 13:09:11.603 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/planirovanie
-2022-02-17 13:09:12.013 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/flutter
-2022-02-17 13:09:12.423 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/render-dvizhki
-2022-02-17 13:09:12.814 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/graficheskiy-dizayn
-2022-02-17 13:09:13.192 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/produsirovanie-video
-2022-02-17 13:09:13.681 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/risovanie-i-illyustratsiya
-2022-02-17 13:09:14.073 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/photografia
-2022-02-17 13:09:14.513 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/razrabotka-kontseptsii
-2022-02-17 13:09:14.903 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/ios
-2022-02-17 13:09:15.290 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/makeup
-2022-02-17 13:09:15.778 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/instagram
-2022-02-17 13:09:16.187 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/grafika-i-animaciya
-2022-02-17 13:09:16.571 [ForkJoinPool-1-worker-2] INFO  LoggerNods - Node → https://skillbox.ru/code/courses/frilans
+2022-02-18 12:19:40.411 [main] INFO  LoggerNods - Node → https://skillbox.ru Level → 0
+2022-02-18 12:19:41.568 [main] INFO  LoggerNods - Node → https://skillbox.ru/company Level → 1
+2022-02-18 12:19:41.677 [main] INFO  LoggerNods - Node → https://skillbox.ru/career Level → 1
+2022-02-18 12:19:41.755 [main] INFO  LoggerNods - Node → https://skillbox.ru/otzyvy Level → 1
+2022-02-18 12:19:42.130 [main] INFO  LoggerNods - Node → https://skillbox.ru/contacts Level → 1
+2022-02-18 12:19:42.521 [main] INFO  LoggerNods - Node → https://skillbox.ru/jobs Level → 1
+2022-02-18 12:19:42.583 [main] INFO  LoggerNods - Node → https://skillbox.ru/teachers Level → 1
+2022-02-18 12:19:42.677 [main] INFO  LoggerNods - Node → https://skillbox.ru/lectoriy Level → 1
+2022-02-18 12:19:42.771 [main] INFO  LoggerNods - Node → https://skillbox.ru/media Level → 1
+2022-02-18 12:19:42.880 [main] INFO  LoggerNods - Node → https://skillbox.ru/code Level → 1
+2022-02-18 12:19:42.943 [main] INFO  LoggerNods - Node → https://skillbox.ru/design Level → 1
+2022-02-18 12:19:43.021 [main] INFO  LoggerNods - Node → https://skillbox.ru/marketing Level → 1
+2022-02-18 12:19:43.099 [main] INFO  LoggerNods - Node → https://skillbox.ru/management Level → 1
+2022-02-18 12:19:43.177 [main] INFO  LoggerNods - Node → https://skillbox.ru/games Level → 1
+2022-02-18 12:19:43.255 [main] INFO  LoggerNods - Node → https://skillbox.ru/multimedia Level → 1
+2022-02-18 12:19:43.333 [main] INFO  LoggerNods - Node → https://skillbox.ru/psychology Level → 1
+2022-02-18 12:19:43.412 [main] INFO  LoggerNods - Node → https://skillbox.ru/general-education Level → 1
+2022-02-18 12:19:43.490 [main] INFO  LoggerNods - Node → https://skillbox.ru/engineering Level → 1
+2022-02-18 12:19:43.552 [main] INFO  LoggerNods - Node → https://skillbox.ru/english Level → 1
+2022-02-18 12:19:43.662 [main] INFO  LoggerNods - Node → https://skillbox.ru/other Level → 1
+2022-02-18 12:19:43.818 [main] INFO  LoggerNods - Node → https://skillbox.ru/privacy_policy.pdf Level → 1
+2022-02-18 12:19:43.865 [main] INFO  LoggerNods - Node → https://skillbox.ru/terms_of_use.pdf Level → 1
+2022-02-18 12:19:43.927 [main] INFO  LoggerNods - Node → https://skillbox.ru/oferta.pdf Level → 1
+2022-02-18 12:19:43.990 [main] INFO  LoggerNods - Node → https://skillbox.ru/payments Level → 1
+2022-02-18 12:19:43.990 [main] INFO  LoggerNods - Node → https://skillbox.ru/company Level → 1
+2022-02-18 12:19:44.177 [main] INFO  LoggerNods - Node → https://skillbox.ru/media Level → 1
+2022-02-18 12:19:44.458 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/about-media Level → 2
+2022-02-18 12:19:44.552 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/code Level → 2
+2022-02-18 12:19:44.646 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education Level → 2
+2022-02-18 12:19:44.755 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/marketing Level → 2
+2022-02-18 12:19:45.162 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev Level → 2
+2022-02-18 12:19:45.271 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/management Level → 2
+2022-02-18 12:19:45.365 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business Level → 2
+2022-02-18 12:19:45.490 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/growth Level → 2
+2022-02-18 12:19:45.599 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/design Level → 2
+2022-02-18 12:19:45.646 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/ Level → 2
+2022-02-18 12:19:45.849 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/kto-est-kto-v-edtech-kodland Level → 2
+2022-02-18 12:19:45.958 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/topic/articles Level → 2
+2022-02-18 12:19:46.099 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/marketing/poyavilas-novaya-sotsset-tonplace Level → 2
+2022-02-18 12:19:46.224 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/razvitie-myshleniya-i-formirovanie-soobshchestva-kakoy-dolzhna-byt-tsel-vysshego-obrazovaniya Level → 2
+2022-02-18 12:19:46.380 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/nazvana-dolya-vuzov-pereshedshikh-na-distant-izza-kovida Level → 2
+2022-02-18 12:19:46.547 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/obyavlen-start-vtoroy-volny-otbora-lokatsiy-dlya-kampusov-mirovogo-urovnya Level → 2
+2022-02-18 12:19:46.719 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/marketpleysam-mogut-predlozhit-nalogovye-lgoty Level → 2
+2022-02-18 12:19:46.875 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/stalo-izvestno-kakoy-budet-priyemnaya-kampaniya-2022-goda Level → 2
+2022-02-18 12:19:47.047 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/nintendo-zakroet-magaziny-igr-dlya-3ds-i-wii-u-chego-lishatsya-polzovateli Level → 2
+2022-02-18 12:19:47.203 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/microsoft-boretsya-s-domogatelstvami-v-metavselennoy Level → 2
+2022-02-18 12:19:47.359 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/otchyet-epic-games-store-500-mln-igrokov-6-mln-zagruzok-tekhnodemo-po-matritse-plany-kompanii Level → 2
+2022-02-18 12:19:47.531 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/kriptovalyuty-stali-rezhe-ispolzovat-v-prestupnykh-tselyakh Level → 2
+2022-02-18 12:19:47.687 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/code/polzovateli-microsoft-office-365-podvergayutsya-khakerskim-atakam-vashi-dokumenty-v-opasnosti Level → 2
+2022-02-18 12:19:47.844 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/bank-jpmorgan-otkrylsya-v-metavselennoy Level → 2
+2022-02-18 12:19:47.984 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/vuzam-predrekli-risk-poteri-konkurentosposobnosti Level → 2
+2022-02-18 12:19:48.156 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/uchyenye-obnaruzhili-chto-mozg-cheloveka-poraznomu-reagiruet-na-slozhenie-i-vychitanie Level → 2
+2022-02-18 12:19:48.344 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/design/sony-naushniki Level → 2
+2022-02-18 12:19:48.500 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/obuchenie-odaryennykh-detey-stanovitsya-bolee-dostupnym-no-ne-vezde-konechno Level → 2
+2022-02-18 12:19:48.640 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/obrazovatelnyy-kholding-ultimate-education-privlyek-500-mln-rubley-investitsiy Level → 2
+2022-02-18 12:19:48.812 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/yennifer-iz-vedmaka-samyy-privlekatelnyy-zhenskiy-personazh-dlya-rossiyskikh-geymerovmuzhchin Level → 2
+2022-02-18 12:19:48.922 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/neyroset-nauchili-flirtovat Level → 2
+2022-02-18 12:19:49.187 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/-pravitelstvo-khochet-finansirovat-patrioticheskie-igry-za-schyet-steam-i-drugikh-ploshchadok Level → 2
+2022-02-18 12:19:49.406 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/code/katya-petrova-my-delaem-podlodka-potomu-chto-khotim-i-mozhem Level → 2
+2022-02-18 12:19:49.625 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/business/kto-est-kto-v-edtech-hyperiondev Level → 2
+2022-02-18 12:19:50.234 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/kak-sdelat-portfolio-dlya-2dkhudozhnika-sovety-po-sostavleniyu Level → 2
+2022-02-18 12:19:50.531 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/education/byloe-delo-prepodavatelya-sledit-za-razvitiem-mysli Level → 2
+2022-02-18 12:19:50.765 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/topic/history Level → 2
+2022-02-18 12:19:50.890 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/growth/chem-zanyatsya-v-gendernye-prazdniki Level → 2
+2022-02-18 12:19:51.015 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/design/shriftovye-pary Level → 2
+2022-02-18 12:19:51.250 [main] INFO  LoggerNods - Node → https://skillbox.ru/media/topic/collections Level → 2
+2022-02-18 12:21:49.362 [main] INFO  LoggerNods - Node → https://skillbox.ru Level → 0
+2022-02-18 12:21:51.166 [main] INFO  LoggerNods - Node → https://skillbox.ru/company Level → 1
+2022-02-18 12:21:51.229 [main] INFO  LoggerNods - Node → https://skillbox.ru/career Level → 1
+2022-02-18 12:21:51.307 [main] INFO  LoggerNods - Node → https://skillbox.ru/otzyvy Level → 1
+2022-02-18 12:21:51.385 [main] INFO  LoggerNods - Node → https://skillbox.ru/contacts Level → 1
+2022-02-18 12:21:51.463 [main] INFO  LoggerNods - Node → https://skillbox.ru/jobs Level → 1
+2022-02-18 12:21:51.526 [main] INFO  LoggerNods - Node → https://skillbox.ru/teachers Level → 1
+2022-02-18 12:21:51.604 [main] INFO  LoggerNods - Node → https://skillbox.ru/lectoriy Level → 1
+2022-02-18 12:21:51.698 [main] INFO  LoggerNods - Node → https://skillbox.ru/media Level → 1
+2022-02-18 12:21:51.760 [main] INFO  LoggerNods - Node → https://skillbox.ru/code Level → 1
+2022-02-18 12:21:51.838 [main] INFO  LoggerNods - Node → https://skillbox.ru/design Level → 1
+2022-02-18 12:21:51.916 [main] INFO  LoggerNods - Node → https://skillbox.ru/marketing Level → 1
+2022-02-18 12:21:51.979 [main] INFO  LoggerNods - Node → https://skillbox.ru/management Level → 1
+2022-02-18 12:21:52.057 [main] INFO  LoggerNods - Node → https://skillbox.ru/games Level → 1
+2022-02-18 12:21:52.120 [main] INFO  LoggerNods - Node → https://skillbox.ru/multimedia Level → 1
+2022-02-18 12:21:52.182 [main] INFO  LoggerNods - Node → https://skillbox.ru/psychology Level → 1
+2022-02-18 12:21:52.651 [main] INFO  LoggerNods - Node → https://skillbox.ru/general-education Level → 1
+2022-02-18 12:21:52.776 [main] INFO  LoggerNods - Node → https://skillbox.ru/engineering Level → 1
+2022-02-18 12:21:52.854 [main] INFO  LoggerNods - Node → https://skillbox.ru/english Level → 1
+2022-02-18 12:21:52.932 [main] INFO  LoggerNods - Node → https://skillbox.ru/other Level → 1
+2022-02-18 12:21:52.995 [main] INFO  LoggerNods - Node → https://skillbox.ru/privacy_policy.pdf Level → 1
+2022-02-18 12:21:53.088 [main] INFO  LoggerNods - Node → https://skillbox.ru/terms_of_use.pdf Level → 1
+2022-02-18 12:21:53.120 [main] INFO  LoggerNods - Node → https://skillbox.ru/oferta.pdf Level → 1
+2022-02-18 12:21:53.198 [main] INFO  LoggerNods - Node → https://skillbox.ru/payments Level → 1
+2022-02-18 12:21:53.432 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/lectoriy/records Level → 2
+2022-02-18 12:21:55.620 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/code/courses Level → 2
+2022-02-18 12:21:55.682 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/code/faculty/backend-development Level → 2
+2022-02-18 12:21:55.761 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/code/faculty/web-development Level → 2
+2022-02-18 12:21:55.839 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/code/faculty/mobile-development Level → 2
+2022-02-18 12:21:55.917 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/code/faculty/data-analysis Level → 2
+2022-02-18 12:21:55.979 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/code/faculty/it-infrastructure Level → 2
+2022-02-18 12:26:31.875 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/marketing/faculty/brand-marketing Level → 2
+2022-02-18 12:26:31.938 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/marketing/faculty/analytics Level → 2
+2022-02-18 12:26:32.016 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/marketing/faculty/performance-marketing Level → 2
+2022-02-18 12:26:35.084 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/marketing/faculty/electronic-commerce Level → 2
+2022-02-18 12:29:25.133 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/design/faculty/digital-design Level → 2
+2022-02-18 12:29:25.184 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/design/faculty/environment-design Level → 2
+2022-02-18 12:29:28.262 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/design/faculty/photo-fashion-beauty Level → 2
+2022-02-18 12:35:14.893 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/management/faculty/education Level → 2
+2022-02-18 12:35:14.956 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/management/faculty/finance-and-accounting Level → 2
+2022-02-18 12:35:18.012 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/management/faculty/projects-and-products Level → 2
+2022-02-18 12:35:21.090 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/management/faculty/management-and-analytics Level → 2
+2022-02-18 12:36:18.204 [ForkJoinPool-1-worker-4] INFO  LoggerNods - Node → https://skillbox.ru/design/faculty/digital-design/courses/unity Level → 3
+2022-02-18 12:39:04.544 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/about-media Level → 2
+2022-02-18 12:39:07.654 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/code Level → 2
+2022-02-18 12:39:07.748 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education Level → 2
+2022-02-18 12:39:07.873 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/marketing Level → 2
+2022-02-18 12:39:07.982 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev Level → 2
+2022-02-18 12:39:08.076 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/management Level → 2
+2022-02-18 12:39:08.482 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business Level → 2
+2022-02-18 12:39:08.607 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/growth Level → 2
+2022-02-18 12:39:08.841 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/design Level → 2
+2022-02-18 12:39:08.873 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/ Level → 2
+2022-02-18 12:39:09.107 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/kto-est-kto-v-edtech-kodland Level → 2
+2022-02-18 12:39:09.466 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/topic/articles Level → 2
+2022-02-18 12:39:09.873 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/marketing/poyavilas-novaya-sotsset-tonplace Level → 2
+2022-02-18 12:39:10.935 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/razvitie-myshleniya-i-formirovanie-soobshchestva-kakoy-dolzhna-byt-tsel-vysshego-obrazovaniya Level → 2
+2022-02-18 12:39:14.116 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/nazvana-dolya-vuzov-pereshedshikh-na-distant-izza-kovida Level → 2
+2022-02-18 12:39:14.304 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/obyavlen-start-vtoroy-volny-otbora-lokatsiy-dlya-kampusov-mirovogo-urovnya Level → 2
+2022-02-18 12:39:14.460 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/marketpleysam-mogut-predlozhit-nalogovye-lgoty Level → 2
+2022-02-18 12:39:14.648 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/stalo-izvestno-kakoy-budet-priyemnaya-kampaniya-2022-goda Level → 2
+2022-02-18 12:39:14.819 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/nintendo-zakroet-magaziny-igr-dlya-3ds-i-wii-u-chego-lishatsya-polzovateli Level → 2
+2022-02-18 12:39:14.991 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/microsoft-boretsya-s-domogatelstvami-v-metavselennoy Level → 2
+2022-02-18 12:39:15.163 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/otchyet-epic-games-store-500-mln-igrokov-6-mln-zagruzok-tekhnodemo-po-matritse-plany-kompanii Level → 2
+2022-02-18 12:39:15.319 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/kriptovalyuty-stali-rezhe-ispolzovat-v-prestupnykh-tselyakh Level → 2
+2022-02-18 12:39:15.476 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/code/polzovateli-microsoft-office-365-podvergayutsya-khakerskim-atakam-vashi-dokumenty-v-opasnosti Level → 2
+2022-02-18 12:39:15.632 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/bank-jpmorgan-otkrylsya-v-metavselennoy Level → 2
+2022-02-18 12:39:18.757 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/vuzam-predrekli-risk-poteri-konkurentosposobnosti Level → 2
+2022-02-18 12:39:18.944 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/uchyenye-obnaruzhili-chto-mozg-cheloveka-poraznomu-reagiruet-na-slozhenie-i-vychitanie Level → 2
+2022-02-18 12:39:19.116 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/design/sony-naushniki Level → 2
+2022-02-18 12:39:19.304 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/obuchenie-odaryennykh-detey-stanovitsya-bolee-dostupnym-no-ne-vezde-konechno Level → 2
+2022-02-18 12:39:19.460 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/obrazovatelnyy-kholding-ultimate-education-privlyek-500-mln-rubley-investitsiy Level → 2
+2022-02-18 12:39:19.616 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/yennifer-iz-vedmaka-samyy-privlekatelnyy-zhenskiy-personazh-dlya-rossiyskikh-geymerovmuzhchin Level → 2
+2022-02-18 12:39:19.773 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/neyroset-nauchili-flirtovat Level → 2
+2022-02-18 12:39:19.929 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/-pravitelstvo-khochet-finansirovat-patrioticheskie-igry-za-schyet-steam-i-drugikh-ploshchadok Level → 2
+2022-02-18 12:39:20.054 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/code/katya-petrova-my-delaem-podlodka-potomu-chto-khotim-i-mozhem Level → 2
+2022-02-18 12:39:20.288 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/business/kto-est-kto-v-edtech-hyperiondev Level → 2
+2022-02-18 12:39:20.429 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/gamedev/kak-sdelat-portfolio-dlya-2dkhudozhnika-sovety-po-sostavleniyu Level → 2
+2022-02-18 12:39:20.773 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/education/byloe-delo-prepodavatelya-sledit-za-razvitiem-mysli Level → 2
+2022-02-18 12:39:21.007 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/topic/history Level → 2
+2022-02-18 12:39:24.262 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/growth/chem-zanyatsya-v-gendernye-prazdniki Level → 2
+2022-02-18 12:39:27.543 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/design/shriftovye-pary Level → 2
+2022-02-18 12:39:27.793 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/media/topic/collections Level → 2
+2022-02-18 12:39:28.021 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/multimedia/faculty/videos Level → 2
+2022-02-18 12:46:23.309 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/games/faculty/sport Level → 2
+2022-02-18 12:46:27.918 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/games/faculty/game-development Level → 2
+2022-02-18 12:46:29.518 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/games/faculty/graphics-and-animation Level → 2
+2022-02-18 12:46:31.315 [ForkJoinPool-1-worker-1] INFO  LoggerNods - Node → https://skillbox.ru/games/faculty/esports Level → 2

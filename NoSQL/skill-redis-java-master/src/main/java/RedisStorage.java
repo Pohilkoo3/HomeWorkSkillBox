@@ -1,12 +1,10 @@
 import org.redisson.Redisson;
 import org.redisson.api.RKeys;
 import org.redisson.api.RList;
-import org.redisson.api.RScoredSortedSet;
 import org.redisson.api.RedissonClient;
 import org.redisson.client.RedisConnectionException;
 import org.redisson.config.Config;
 
-import java.util.Date;
 
 import static java.lang.System.out;
 

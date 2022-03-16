@@ -1,7 +1,6 @@
 package main;
 
-import responce.ExecutorCase;
-import responce.Task;
+import main.model.Task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,10 +20,10 @@ public class ListTasksStorage
     }
 
 
-    public synchronized static int addTask(Task task, ExecutorCase executorCase){
+    public synchronized static int addTask(Task task){
         int idTask = listTasks.size() + 1;
         task.setId(idTask);
-        task.setExecutor(executorCase);
+
         listTasks.put(idTask, task);
         return idTask;
     }
@@ -53,10 +52,9 @@ public class ListTasksStorage
         }
         return listTasks.get(id);
     }
-    public static Task changeElementAllFields (int id, String text, ExecutorCase executorCase){
+    public static Task changeElementAllFields (int id, String text){
         Task task = getTaskId(id);
         task.setTextTask(text);
-        task.setExecutor(executorCase);
         synchronized (listTasks){
             listTasks.put(id, task);
         }

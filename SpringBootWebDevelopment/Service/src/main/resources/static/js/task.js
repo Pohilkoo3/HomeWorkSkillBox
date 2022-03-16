@@ -1,16 +1,14 @@
 $(function(){
-
-//$.get('/tasks/',{}, function(response){
-//        if(response.length == 0){
-//           alert('Все cупер. Все дела переделаны!');
-//        }
-//        for(i in response)
-//        {
-//            let element = '<div class="task">' + response[i].id  + ' → '+ response[i].textTask + '</div>';
-//            $('.mapping-all-tasks').append(element);
-//        }
-//        });
-
+$.get('/tasks/',{}, function(response){
+        if(response.length == 0){
+           alert('Все cупер. Все дела переделаны!');
+        }
+        for(i in response)
+        {
+            let element = '<div class="task">' + response[i].id  + ' → '+ response[i].textTask + '</div>';
+            $('.mapping-all-tasks').append(element);
+        }
+        });
 $('.add-task').on('click', function()
     {
   let textTask = $('.add-text').val();
