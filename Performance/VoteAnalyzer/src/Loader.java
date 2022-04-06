@@ -5,6 +5,8 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,27 +21,47 @@ public class Loader {
     private static HashMap<Voter, Integer> voterCounts = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
-        String fileName = "res/data-1M.xml";
+        String fileName = "res/data-18M.xml";
 
-        parseFile(fileName);
+        parseFileSAX(fileName);//обрабатываем через SAX
 
-        //Printing results
-        System.out.println("Voting station work times: ");
-        for (Integer votingStation : voteStationWorkTimes.keySet()) {
-            WorkTime workTime = voteStationWorkTimes.get(votingStation);
-            System.out.println("\t" + votingStation + " - " + workTime);
-        }
 
-        System.out.println("Duplicated voters: ");
-        for (Voter voter : voterCounts.keySet()) {
-            Integer count = voterCounts.get(voter);
-            if (count > 1) {
-                System.out.println("\t" + voter + " - " + count);
-            }
-        }
+
+//        long usages = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+//        parseFileDOM(fileName);//обрабатываем через DOM
+//        System.out.println("Память после заполнения: → " +
+//                (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usages));
+//        System.out.println("Voting station work times: ");
+//        for (Integer votingStation : voteStationWorkTimes.keySet()) {
+//            WorkTime workTime = voteStationWorkTimes.get(votingStation);
+//            System.out.println("\t" + votingStation + " - " + workTime);
+//        }
+//
+//        System.out.println("Duplicated voters: ");
+//        for (Voter voter : voterCounts.keySet()) {
+//            Integer count = voterCounts.get(voter);
+//            if (count > 1) {
+//                System.out.println("\t" + voter + " - " + count);
+//            }
+//        }
     }
 
-    private static void parseFile(String fileName) throws Exception {
+    private static void parseFileSAX(String fileName) throws Exception {
+        long usages = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+
+        SAXParserFactory factory =SAXParserFactory.newInstance();
+        SAXParser parser = factory.newSAXParser();
+        DocHandler handler = new DocHandler();
+        parser.parse(new File(fileName), handler);
+
+        System.out.println("Память после заполнения: → " +
+                (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usages));
+
+        handler.printVotesDuplicate();//распечатать дупликаты голосов
+        DocHandler.printStationsTimeWork();
+    }
+
+    private static void parseFileDOM(String fileName) throws Exception {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document doc = db.parse(new File(fileName));
@@ -54,11 +76,9 @@ public class Loader {
         for (int i = 0; i < votersCount; i++) {
             Node node = voters.item(i);
             NamedNodeMap attributes = node.getAttributes();
-
             String name = attributes.getNamedItem("name").getNodeValue();
             Date birthDay = birthDayFormat
                 .parse(attributes.getNamedItem("birthDay").getNodeValue());
-
             Voter voter = new Voter(name, birthDay);
             Integer count = voterCounts.get(voter);
             voterCounts.put(voter, count == null ? 1 : count + 1);
@@ -71,7 +91,6 @@ public class Loader {
         for (int i = 0; i < visitCount; i++) {
             Node node = visits.item(i);
             NamedNodeMap attributes = node.getAttributes();
-
             Integer station = Integer.parseInt(attributes.getNamedItem("station").getNodeValue());
             Date time = visitDateFormat.parse(attributes.getNamedItem("time").getNodeValue());
             WorkTime workTime = voteStationWorkTimes.get(station);
