@@ -21,14 +21,23 @@ public class Loader {
     private static HashMap<Voter, Integer> voterCounts = new HashMap<>();
 
     public static void main(String[] args) throws Exception {
-        String fileName = "res/data-18M.xml";
+        String fileName = "res/data-1572M.xml";
 
+        long start = System.currentTimeMillis();
         parseFileSAX(fileName);//обрабатываем через SAX
 
 
 
-//        long usages = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 //        parseFileDOM(fileName);//обрабатываем через DOM
+        String commitForSearch = "Ограничение памяти 300мб. ОП Джава SAX. Файл на 18мб. " +
+                "Сохраняем в БД. C индексом на имя и дату рождения, но без проверки на дупликаты";
+        long result = System.currentTimeMillis() - start;
+
+        DBConnection.saveResultsMeasure(result, commitForSearch);
+
+//        DBConnection.printVoterCounts();
+//        long usages = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+//
 //        System.out.println("Память после заполнения: → " +
 //                (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usages));
 //        System.out.println("Voting station work times: ");
@@ -47,18 +56,27 @@ public class Loader {
     }
 
     private static void parseFileSAX(String fileName) throws Exception {
-        long usages = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+//        long usages = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
         SAXParserFactory factory =SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         DocHandler handler = new DocHandler();
         parser.parse(new File(fileName), handler);
+        DBConnection.executeMultiInsert();
+//        System.out.println("Избирателей → " + handler.getListVoters().size());
+//        System.out.println("Последний избиратель → ");
+//        handler.getListVoters()
+//                .entrySet().stream().map(v ->v.getKey())
+//                .map(Voter::getName)
+//                .filter(n -> n.equals("Курослепов Ветран"))
+//                .forEach(System.out::println);
 
-        System.out.println("Память после заполнения: → " +
-                (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usages));
 
-        handler.printVotesDuplicate();//распечатать дупликаты голосов
-        DocHandler.printStationsTimeWork();
+//        System.out.println("Память после заполнения: → " +
+//                (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usages));
+
+//        handler.printVotesDuplicate();//распечатать дупликаты голосов
+//        DocHandler.printStationsTimeWork();
     }
 
     private static void parseFileDOM(String fileName) throws Exception {
@@ -67,7 +85,7 @@ public class Loader {
         Document doc = db.parse(new File(fileName));
 
         findEqualVoters(doc);
-        fixWorkTimes(doc);
+//        fixWorkTimes(doc);
     }
 
     private static void findEqualVoters(Document doc) throws Exception {
@@ -77,12 +95,14 @@ public class Loader {
             Node node = voters.item(i);
             NamedNodeMap attributes = node.getAttributes();
             String name = attributes.getNamedItem("name").getNodeValue();
-            Date birthDay = birthDayFormat
-                .parse(attributes.getNamedItem("birthDay").getNodeValue());
-            Voter voter = new Voter(name, birthDay);
-            Integer count = voterCounts.get(voter);
-            voterCounts.put(voter, count == null ? 1 : count + 1);
+           String birthDay = attributes.getNamedItem("birthDay").getNodeValue();
+
+            DBConnection.countVoter(name, birthDay);
+            if (i == votersCount - 1){
+                DBConnection.executeMultiInsert();
+            }
         }
+        DBConnection.executeMultiInsert();
     }
 
     private static void fixWorkTimes(Document doc) throws Exception {
