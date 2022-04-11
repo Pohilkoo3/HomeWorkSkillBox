@@ -68,4 +68,12 @@ public class TimePeriod implements Comparable<TimePeriod> {
         }
         return current.compareTo(compared);
     }
+
+    public long getFrom() {
+        return from;
+    }
+
+    public long getTo() {
+        return to;
+    }
 }

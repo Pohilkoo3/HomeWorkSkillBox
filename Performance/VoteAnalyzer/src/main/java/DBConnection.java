@@ -1,12 +1,17 @@
 import java.sql.*;
 import java.text.SimpleDateFormat;
-import java.util.HashMap;
-import java.util.Map;
+import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.TreeSet;
+
 
 public class DBConnection {
 
     private static Connection connection;
     private static SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
+    private static SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+
+    private static int count = 0;
     private static String dbName = "learn";
     private static String dbUser = "root";
     private static String dbPass = "Oleg09061979$";
@@ -23,8 +28,14 @@ public class DBConnection {
                     "name TINYTEXT NOT NULL, " +
                     "birthDate DATE NOT NULL, " +
                     "`count` INT NOT NULL, " +
-                    "PRIMARY KEY(id)," +           //  )");
-                    "UNIQUE KEY name_date(name(50), birthDate))");
+                    "PRIMARY KEY(id))");
+                connection.createStatement().execute("DROP TABLE IF EXISTS workTime_station");
+                connection.createStatement().execute("CREATE TABLE workTime_station(" +
+                        "id INT NOT NULL AUTO_INCREMENT, " +
+                        "station INT NOT NULL, " +
+                        "work_begin long NOT NULL, " +
+                        "work_end long NOT NULL, " +
+                        "PRIMARY KEY(id))");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -34,31 +45,34 @@ public class DBConnection {
 
     public static void executeMultiInsert() throws SQLException{
        String sql = "INSERT INTO voter_count(name, birthDate, `count`) VALUES" + stringBuilder.toString();
-//        String sql = "INSERT INTO voter_count(name, birthDate, `count`) VALUES" + stringBuilder.toString()
-//                +  " ON DUPLICATE KEY UPDATE count=count+1";
         DBConnection.getConnection().createStatement().execute(sql);
     }
+
+    public static void executeMultiInsertStationTimeWork() throws SQLException{
+        StringBuilder stringBuilderStation = new StringBuilder();
+        for (Integer votingStation : DocHandler.getVoteStationWorkTimes().keySet()) {
+            WorkTime workTime = DocHandler.getVoteStationWorkTimes().get(votingStation);
+            TreeSet<TimePeriod> listTimePeriods = workTime.getPeriods();
+            for (TimePeriod timeperiod : listTimePeriods) {
+                stringBuilderStation.append((stringBuilderStation.length() == 0 ? "" : ",") +
+                        ("('" + votingStation + "', '" + timeperiod.getFrom() + "','" + timeperiod.getTo() + "')" ));
+            }
+        }
+        String sql = "INSERT INTO workTime_station(station, work_begin, work_end) VALUES" + stringBuilderStation.toString();
+        DBConnection.getConnection().createStatement().execute(sql);
+    }
+
     public static void countVoter(String name, String birthDay) throws SQLException {
         birthDay = birthDay.replace('.', '-');
         stringBuilder.append((stringBuilder.length() == 0 ? "" : ",") + ("('" + name + "', '" + birthDay + "', 1)" ));
         if (stringBuilder.length() > 3_000_000) {
             executeMultiInsert();
-            System.out.println("Выполнил вставку==================================================");
+            count++;
+            System.out.println(count * 81_000);
             stringBuilder = new StringBuilder();
         }
     }
 
-
-
-
-    public static void printVoterCounts() throws SQLException {
-        String sql = "SELECT name, birthDate, `count` FROM voter_count WHERE `count` > 1";
-        ResultSet rs = DBConnection.getConnection().createStatement().executeQuery(sql);
-        while (rs.next()) {
-            System.out.println("\t" + rs.getString("name") + " (" +
-                rs.getString("birthDate") + ") - " + rs.getInt("count"));
-        }
-    }
 
     public static void saveResultsMeasure (long timeProcess, String terms) throws SQLException{
         if (connection == null) {

@@ -34,4 +34,8 @@ public class WorkTime {
         }
         return line;
     }
+
+    public TreeSet<TimePeriod> getPeriods() {
+        return periods;
+    }
 }
